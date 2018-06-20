@@ -1,0 +1,74 @@
+.bodyheader {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*!!!!! Don't believe this is needed !!!!!*/
+.fixed-center {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+  
+  .relative-center {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    transform: translate(0%, -50%);
+  }
+  
+  .absolute-center {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-top: auto;
+    margin-bottom: auto; */
+  
+    position: absolute; 
+    top: 50%; 
+    width: 100vw; 
+    transform: translate(0%, -50%); 
+  }
+
+/*!
+ * Custom navbar
+ */
+
+ .navbar-custom {
+  background-color:rgba(0,0,0,0);
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: rgba(666666,666666,666666,1);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(666666, 666666, 666666, 1);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* underline the non-active links */
+.navbar-custom .nav-item .nav-link{
+  text-decoration: underline; 
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-custom {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}

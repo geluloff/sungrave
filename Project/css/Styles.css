@@ -1,0 +1,296 @@
+.bgtrans
+{
+  background-color: rgba(0,0,0,0);
+  color:  #ffffff;
+  border: none;
+}
+
+@media screen and (min-width: 501px) {
+  div.subtitlesizecap {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.subtitlesizecap {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  div.headersizecap {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.headersizecap {
+    font-size: 12vw;
+  }
+}
+
+/* Dimmer for background */
+
+.darken-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 30px;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #666;
+    font-family: 'Courgette', cursive;
+}
+
+.header-background {
+    background-image: url(cafefront4.jpg) !important; /* cafefront.jpg (includes sidewalk */
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    /*background-color: transparent !important; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header-background h3,
+.header-background h1,
+.header-background .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.header-background .navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bolder;
+}
+
+.header-background .navbar {
+    transition: background-color ease-out 0.33s;
+}
+.header-background .navbar.affix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1040;
+}
+
+.navbar-brand {
+    display: none;
+    top: auto;
+    position: relative;
+}
+
+/* Turn navbar back on after intro */
+.navbar.bg-dark .navbar-brand {
+    display: block;
+}
+
+/*.navbar-collapse .navbar-nav .nav-link {
+  text-align: right;
+}*/
+
+.page {
+    /* height: 90vh; */
+    padding: 25px;
+    margin: 10px;
+    /*border-left: 1px solid #343a40;
+    border-right: 1px solid #343a40; */
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foot {
+  height: 20vh;
+  background-color: #343a40;
+  /* border-left: 1px solid #666;
+  border-right: 1px solid #666; */
+  color: #fff;
+  padding-top: 25px;
+  /*margin: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, .51);*/
+}
+
+#about{
+  background-image: url(DSC_1044.JPG) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 0% !important;
+  background-size: 100vw 30vh !important;
+  color: #fff;
+  /*background-color: transparent !important; */
+}
+
+/* fixed navbar in mobile mode (navbar-expand-sm) */
+@media (max-width: 575.98px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.ztop{
+  z-index: 1030
+}
+
+#module {
+  font-size: 14px;
+  line-height: 1.5;
+}
+#module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 42px !important;
+    overflow: hidden;
+}
+#module p.collapsing[aria-expanded="false"] {
+    height: 42px !important;
+}
+
+
+/* Set nav-bar color theme (note requires restart of project to activate new color) */
+
+.bg-navbarcustom {
+  background-color: #552000 !important;
+}
+
+a.bg-navbarcustom:hover, a.bg-navbarcustom:focus,
+button.bg-navbarcustom:hover,
+button.bg-navbarcustom:focus {
+  background-color: #552000 !important;
+}
+
+/* Backgrounds for non-main page */
+.about-background {
+  background-image: url(DSC_1044.JPG) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  /*background-color: transparent !important; */
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.menu-background {
+  background-image: url(DSC_2517.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  /*background-color: transparent !important; */
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.forum-background {
+  background-image: url(DSC_1053.JPG) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  /*background-color: transparent !important; */
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff;
+}
+.contact-background {
+  background-image: url(beanbg.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  /*background-color: transparent !important; */
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.darken-overlaysub {
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(0,0,0,0));
+}
+
+.brighten-foot {
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0,0,0,0));
+}
+
+/* Icon classes */
+
+.icon-pos {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.icon-pos-foot {
+  position: relative;
+  top: 0;
+  padding-bottom: 0em;
+  text-align: center;
+}
+
+.icon-margin {
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+/* Overwrite link styling */
+a { color: rgb(197, 197, 197);}
+a:link { color: rgb(200, 134, 27);}
+a​:active { color: rgb(197, 197, 197); }
+a​:visited { color: rgb(197, 197, 197); }
+a​:hover { color: rgb(200, 134, 0); }
+
+#socialMediaIcons a:link .fab, #socialMediaIcons a:visited .fab  {
+  color: #ccc;
+}
+#socialMediaIcons a:hover .fab, #socialMediaIcons a:focus .fab {
+  color: #ccc;
+  border: none;
+}
+#socialMediaIcons .fab {
+  padding-left: 10px;
+  position: relative;
+  bottom: 25px;
+}
+
+/* scale image for mobile */
+@media (max-width: 575.98px) {
+  .mob-img-scale {
+      width: 75%;
+      height: auto !important;
+      /*object-fit: cover; */
+  }
+}
