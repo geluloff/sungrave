@@ -18,14 +18,16 @@
 }
 
 @media screen and (min-width: 501px) {
-  div.headersizecap {
+  div.headertext {
     font-size: 3.6rem;
+    font-family: 'Courgette', cursive;
   }
 }
 
 @media screen and (max-width: 500px) {
-  div.headersizecap {
+  div.headertext {
     font-size: 12vw;
+    font-family: 'Courgette', cursive;
   }
 }
 
@@ -42,11 +44,11 @@
 body {
     background-color: #f5f5f5;
     color: #666;
-    font-family: 'Courgette', cursive;
+    font-family: inherit;
 }
 
 .header-background {
-    background-image: url(cafefront4.jpg) !important; /* cafefront.jpg (includes sidewalk */
+    background-image: url(cafefront4-web.jpg) !important; /* cafefront.jpg (includes sidewalk */
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
     background-size: cover !important;
@@ -84,7 +86,7 @@ body {
 .navbar-brand {
     display: none;
     top: auto;
-    position: relative;
+    position: absolute;
 }
 
 /* Turn navbar back on after intro */
@@ -117,7 +119,7 @@ body {
 }
 
 #about{
-  background-image: url(DSC_1044.JPG) !important;
+  background-image: url(DSC_1044.jpg) !important;
   background-repeat: no-repeat !important;
   background-position: 0% 0% !important;
   background-size: 100vw 30vh !important;
@@ -132,6 +134,9 @@ body {
         top: 0;
         left: 0;
         width: 100%;
+    }
+    .navbar-brand {
+      position: relative;
     }
 }
 
@@ -167,7 +172,7 @@ button.bg-navbarcustom:focus {
 
 /* Backgrounds for non-main page */
 .about-background {
-  background-image: url(DSC_1044.JPG) !important;
+  background-image: url(DSC_1044.jpg) !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   background-size: cover !important;
@@ -199,7 +204,7 @@ button.bg-navbarcustom:focus {
 }
 
 .forum-background {
-  background-image: url(DSC_1053.JPG) !important;
+  background-image: url(DSC_1053.jpg) !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   background-size: cover !important;
