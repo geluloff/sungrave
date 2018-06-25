@@ -7,27 +7,29 @@
 
 @media screen and (min-width: 501px) {
   div.subtitlesizecap {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   div.subtitlesizecap {
-    font-size: 4.5vw;
+    font-size: 5.45vw;
   }
 }
 
 @media screen and (min-width: 501px) {
   div.headertext {
-    font-size: 3.6rem;
-    font-family: 'Courgette', cursive;
+    font-size: 3.96rem;
+    font-family: 'Bad Script', cursive; /* Courgette */
+    font-weight: bold;
   }
 }
 
 @media screen and (max-width: 500px) {
   div.headertext {
-    font-size: 12vw;
-    font-family: 'Courgette', cursive;
+    font-size: 13.2vw;
+    font-family: 'Bad Script', cursive; /* Courgette */
+    font-weight: bold;
   }
 }
 
@@ -44,7 +46,7 @@
 body {
     background-color: #f5f5f5;
     color: #666;
-    font-family: inherit;
+    font-family: 'Markazi Text', serif;;
 }
 
 .header-background {
@@ -87,6 +89,8 @@ body {
     display: none;
     top: auto;
     position: absolute;
+    font-family: 'Bad Script';
+    font-weight: bold;
 }
 
 /* Turn navbar back on after intro */
@@ -272,11 +276,11 @@ button.bg-navbarcustom:focus {
 }
 
 /* Overwrite link styling */
-a { color: rgb(197, 197, 197);}
-a:link { color: rgb(200, 134, 27);}
-a​:active { color: rgb(197, 197, 197); }
-a​:visited { color: rgb(197, 197, 197); }
-a​:hover { color: rgb(200, 134, 0); }
+a.icon-link { color: rgb(197, 197, 197);}
+a.icon-link:link { color: rgb(197, 197, 197);}
+a.icon-link​:active { color: rgb(197, 197, 197); }
+a​.icon-link:visited { color: rgb(197, 197, 197); }
+a​.icon-link:hover { color: blue; }
 
 #socialMediaIcons a:link .fab, #socialMediaIcons a:visited .fab  {
   color: #ccc;
