@@ -292,11 +292,11 @@ button.bg-navbarcustom:focus {
 }
 
 /* Overwrite link styling */
-a.icon-link { color: rgb(197, 197, 197);}
-a.icon-link:link { color: rgb(197, 197, 197);}
-a.icon-link​:active { color: rgb(197, 197, 197); }
-a​.icon-link:visited { color: rgb(197, 197, 197); }
-a​.icon-link:hover { color: blue; }
+/*a.icon-link { color: rgb(197, 197, 197);} */
+.icon-link:link { color: rgb(197, 197, 197);}
+.icon-link​:active { color: rgb(197, 197, 197); }
+.icon-link:visited { color: rgb(197, 197, 197); }
+.icon-link:hover { color: rgba(197, 197, 197, 0.4); }
 
 #socialMediaIcons a:link .fab, #socialMediaIcons a:visited .fab  {
   color: #ccc;
