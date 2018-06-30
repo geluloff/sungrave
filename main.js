@@ -54,6 +54,7 @@ $(function () {
         if (idx >= 0) {
             event.preventDefault();
             $('html, body').animate({ scrollTop: top }, 500);
+            $(".navbar-collapse").collapse('hide'); //Not sure why this was necessary, but original Bootstrap collapse-on-click seems to be inactive
         }
     });
 
