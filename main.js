@@ -3,6 +3,8 @@ $(function () {
     var $dropmenu = $('.dropdown-menu');
     var $dropitem = $('.dropdown-item');
     var $navbarcollapse = $('.navbar-collapse');
+    var $darkenmain = $('.darken-overlaymain');
+    var $aboutheader = $('.aboutheader');
     var topOffset = $nav.offset().top;
     var windowHeight = $(window).height();
 
@@ -47,4 +49,18 @@ $(function () {
             $('html, body').animate({ scrollTop: top }, 500);
         }
     });
+
+    //toggle darken-overlaymain z-index upon menu dropdown
+    //$('.navbar-toggler').click(function (event) {
+    $("#navbarResponsive").on("show.bs.collapse", function () {
+        $darkenmain.toggleClass('zlayer2');
+        $aboutheader.toggleClass('fadewhite-header');
+        $aboutheader.toggleClass('darken-overlaysub');
+    })
+
+    $("#navbarResponsive").on("hide.bs.collapse", function () {
+        $darkenmain.toggleClass('zlayer2');
+        $aboutheader.toggleClass('fadewhite-header');
+        $aboutheader.toggleClass('darken-overlaysub');
+    })
 })

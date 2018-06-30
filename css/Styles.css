@@ -50,12 +50,27 @@
 
 /* Dimmer for background */
 
-.darken-overlay {
+.darken-overlaymain {
   position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0 30px;
+}
+
+.darken-overlaysub {
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1035;
+}
+
+.fadewhite-header {
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(0,0,0,0));
 }
 
 body {
@@ -154,14 +169,23 @@ body {
         top: 0;
         left: 0;
         width: 100%;
+        padding: .25rem 1rem;
     }
     .navbar-brand {
       position: relative;
     }
 }
 
-.ztop{
-  z-index: 1030
+.zlayer3{
+  z-index: 1030;
+}
+
+.zlayer2{
+  z-index: 1035;
+}
+
+.zlayer1{
+  z-index: 1040;
 }
 
 #module {
@@ -252,20 +276,6 @@ button.bg-navbarcustom:focus {
   align-items: center;
   padding: 0 30px;
   color: #fff;
-}
-
-.darken-overlaysub {
-  position: absolute;
-  width: 100vw;
-  height: 30vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(0,0,0,0));
-}
-
-.brighten-foot {
-  position: absolute;
-  width: 100vw;
-  height: 20vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0,0,0,0));
 }
 
 /* Icon classes */
