@@ -7,6 +7,9 @@ $(function () {
     var $aboutheader = $('.aboutheader');
     var topOffset = $nav.offset().top;
     var windowHeight = $(window).height();
+    //Do I need to reinitialize these upon window resize?
+    var flagTopOffset = $(window).scrollTop() > topOffset ? 1 : 2;
+    var flagWindowHeight = $(window).scrollTop() > windowHeight * .9 ? 1 : 2;
 
     //initial logic in case window is not scrolled to top
     var scrollValue = $(window).scrollTop();
@@ -29,12 +32,16 @@ $(function () {
            .toggleClass('affix', scrollValue > topOffset)
            .toggleClass('bg-dark', scrollValue > windowHeight * .9);
         $dropmenu
-           .toggleClass('bgtrans', scrollValue <= windowHeight * .9)
-           .removeClass('show', scrollValue <= windowHeight * .9);
+           .toggleClass('bgtrans', scrollValue <= windowHeight * .9);
         $dropitem
            .toggleClass('bgtrans', scrollValue <= windowHeight * .9);
-        $navbarcollapse
-            .removeClass('show', scrollValue <=windowHeight * .9);
+        if (scrollValue > windowHeight * .9 && flagWindowHeight != 1) {
+            $("#navbarResponsive:visible").collapse('toggle');
+            flagWindowHeight = 1;
+        } else if (scrollValue <= windowHeight * .9 && flagWindowHeight != 2) {
+            $("#navbarResponsive:visible").collapse('toggle');
+            flagWindowHeight = 2;
+        }
     });
 
 
@@ -50,17 +57,17 @@ $(function () {
         }
     });
 
-    //toggle darken-overlaymain z-index upon menu dropdown
+    //toggle darken everything behind transparent navbar
     //$('.navbar-toggler').click(function (event) {
     $("#navbarResponsive").on("show.bs.collapse", function () {
         $darkenmain.toggleClass('zlayer2');
         $aboutheader.toggleClass('fadewhite-header');
         $aboutheader.toggleClass('darken-overlaysub');
-    })
+    });
 
     $("#navbarResponsive").on("hide.bs.collapse", function () {
         $darkenmain.toggleClass('zlayer2');
         $aboutheader.toggleClass('fadewhite-header');
         $aboutheader.toggleClass('darken-overlaysub');
-    })
-})
+    });
+});
