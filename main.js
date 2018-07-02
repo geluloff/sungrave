@@ -71,4 +71,9 @@ $(function () {
         $aboutheader.toggleClass('fadewhite-header');
         $aboutheader.toggleClass('darken-overlaysub');
     });
+
+    //collapse navbar on click
+    $(document).click(function (event) {
+        $(".navbar-collapse").collapse('hide'); 
+    });
 });
