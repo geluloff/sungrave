@@ -160,6 +160,7 @@ body {
   color: #fff;
   padding-top: 25px;
   padding-bottom: 25px;
+  font-size: 15px;
   /*margin: 10px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, .51);*/
 }
@@ -308,7 +309,7 @@ button.bg-navbarcustom:focus {
 
 .icon-pos-foot {
   position: relative;
-  top: 0;
+  padding-top: 20px;
   padding-bottom: 0em;
   text-align: center;
 }
@@ -364,4 +365,12 @@ button.bg-navbarcustom:focus {
 
 .logo-pad {
   padding-bottom: 20px;
+}
+
+.foot-text {
+  text-align: center;
+}
+
+.foot-text-head {
+  text-decoration: underline;
 }
