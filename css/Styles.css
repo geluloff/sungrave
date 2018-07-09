@@ -346,9 +346,22 @@ button.bg-navbarcustom:focus {
 
 /* scale image for mobile */
 @media (max-width: 575.98px) {
-  .mob-img-scale {
-      width: 75%;
+  .mob-img-scale-head {
+      width: 100%;
       height: auto !important;
       /*object-fit: cover; */
   }
+}
+
+/* scale image for mobile */
+@media (max-width: 575.98px) {
+  .mob-img-scale-foot {
+      width: 50%;
+      height: auto !important;
+      /*object-fit: cover; */
+  }
+}
+
+.logo-pad {
+  padding-bottom: 20px;
 }
