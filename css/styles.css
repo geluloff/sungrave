@@ -80,7 +80,7 @@ This allows us to switch position of the rows for mobile
     position: relative;
 }
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/cafefront4-web.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/nathan-dumlao-326635-unsplash.jpg);
 }
 #review1 .image-cover {
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
@@ -89,7 +89,7 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2517.jpg);
 }
 #review3 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1053.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_0000.png);
 }
 #review4 .image-cover {
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2444.jpg);
