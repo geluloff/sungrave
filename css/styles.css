@@ -1,0 +1,175 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    transition: background-color ease-out 0.33s;
+}
+/* 
+The darken-overlay class will be applied to the body in JS.  
+This will put an overlay over everything behind the navbar 
+*/
+body.darken-overlay:after {
+    content:'';
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+/* 
+Using css grid for the home container 
+This allows us to switch position of the rows for mobile
+*/
+.home-container {
+    min-height: 93vh;
+    display: grid;
+    grid-template-rows: auto 60px auto;
+    grid-template-areas: 
+    "logo"
+    "nav"
+    "social";
+}
+.home-container .logo {
+    max-height: 15rem; 
+    max-width: 15rem; 
+    width: 90vw;
+    grid-area: logo;
+    font-family: 'Bad Script';
+    color: #fff;
+}
+.home-container nav {
+    grid-area: nav;
+}
+.home-container .social-container {
+    grid-area: social;
+}
+
+/* navbar styles */
+.navbar {
+    transition: background-color ease-out 0.33s;
+}
+.navbar.affix {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+.navbar-brand {
+    display: none;
+    position: absolute;
+    font-family: 'Bad Script';
+}
+.navbar.bg-dark .navbar-brand {
+    display: block;
+}
+.navbar.bg-dark {
+    opacity: 0.95;
+}
+
+/* image-cover class that will be used by every section */
+.image-cover {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+#home.image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/cafefront4-web.jpg);
+}
+#review1 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
+}
+#review2 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2517.jpg);
+}
+#review3 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1053.jpg);
+}
+#review4 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2444.jpg);
+}
+#review5 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tasting-table-cover.jpg);
+}
+#review6 .image-cover {
+    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/umviajante-cover.jpg);
+}
+
+/* generic classes for the about, menu, and forum sections since they are all basically the same */
+.section-header {
+    height: 40vh;
+    color: #fff;
+    position: relative;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.section-detail {
+    padding: 25px;
+    margin: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer styles defined here */
+.footer-image {
+    max-height: 150px;
+    margin:15px 0;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+/* social media icons */
+.social > a {
+    font-size: 1.9rem;
+    color: rgb(197, 197, 197);
+    padding: 0 15px;
+}
+.social > a:hover {
+    color: rgba(197, 197, 197, 0.4);
+}
+
+/* location media icons */
+.location > a {
+    color: rgb(197, 197, 197);
+    padding: 0 15px;
+}
+.location > a:hover {
+    color: rgba(197, 197, 197, 0.4);
+}
+
+
+/* narrow screen */
+@media (max-width: 575.98px) {
+    /* reorder our rows to put the navbar on top */
+    .home-container {
+        grid-template-rows: 60px auto auto;
+        grid-template-areas: 
+            "nav"
+            "logo"
+            "social";       
+    }
+    /* fix the navbar and reset position:relative on the navbar-brand */
+    .navbar {
+        position: fixed;
+        width:100%;
+        z-index: 1;
+    }
+    .navbar-brand {
+        position: relative;
+    }
+}
+
+.bg-dark .header-text {
+    color:rgb(209, 132, 45);
+}
+
+span.nobr { white-space: nowrap; }

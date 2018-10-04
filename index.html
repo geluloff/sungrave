@@ -1,61 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Grant Luloff">
     <title>Cafe d&eacute;l Mural</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/styles.css?v=2018-07-18" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
-        <!--- Font Awesome for Social Icons-->
-    <script defer src="/static/fontawesome/fontawesome-all.js"></script>
-    <!-- custom script -->
-    <script src="main.js"></script>
-        <!-- custom styles for this template -->
-        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
-        <link href="css/Styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
-    <div id="home"></div>
-    <div class="header-background">
-        <div class="darken-overlaymain"> </div>
-        <!-- <h1 class= "caption text-center zlayer3">
-            <div class="headertext">Caf&eacute; del Mural</div>
-        </h1>
-        <h1 class= "caption text-center zlayer3">
-                <div class="subtitlesizecap">Artesenal Lab</div>
-        </h1> -->
-        <!-- <h1 class= "caption text-center zlayer3">
-            <div class="header2text">Website Coming Soon</div>
-        </h1>
-        <p></p> -->
-        <img src="img/Logo-Bright-Mod.png" class="mx-auto d-block zlayer3 mob-img-scale-head logo-pad" style="height: 50px" alt="Cafe d&eacute;l Mural Logo">
-
-        <nav class="navbar navbar-expand-sm navbar-dark zlayer1"> <!-- bg-navbarcustom - can use this class to turn the thing brown (if desired)-->
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
+    <!-- HOME -->
+    <section id="home" class="home-container image-cover">
+        <!-- <img src="img/Logo-Bright-Mod.png" class="mt-auto mx-auto logo" alt="Cafe d&eacute;l Mural Logo"> -->
+        <div class= "mt-auto mx-auto logo text-center"> <h1>Caf&eacute; del Mural </h1> Artesenal Lab </div>
+        <nav class="navbar navbar-expand-sm navbar-dark">
             <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand ml-auto mr-sm-auto" href="#">Caf&eacute; del Mural</a>
+            <a class="navbar-brand ml-auto mr-sm-auto" href="#home">Caf&eacute; del Mural</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mx-auto"> <!-- m-sm-auto m-md-auto -->
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link-top" href="#home">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -72,131 +52,162 @@
                 </ul>
             </div>
         </nav>
-        
-    <div class="zlayer3 icon-pos socialMediaIcons">  
-        <div style="font-size:1.25em" class="icon-line">
-            <!-- <div class="icon-line"> -->
-            <a class="icon-link" href="https://www.facebook.com/CafedelMural/"> <i class="fab fa-facebook-f icon-margin"></i></a>
-            <a class="icon-link" href="https://www.instagram.com/cafedelmural/"> <i class="fab fa-instagram icon-margin"></i></a>
-            <a class="icon-link" href="https://api.whatsapp.com/send?phone=573212889323"> <i class="fab fa-whatsapp icon-margin"></i></a>
-            <!-- <i class="fas fa-phone icon-margin"></i>
-            <i class="far fa-envelope icon-margin"></i>
-            <i class="fab fa-twitter icon-margin"></i> -->
-            <a class="icon-link" href="https://www.tripadvisor.com/Restaurant_Review-g297476-d7724624-Reviews-Cafe_del_Mural-Cartagena_Cartagena_District_Bolivar_Department.html"> <i class="fab fa-tripadvisor icon-margin"></i></a>
-            <!-- </div> -->
-        </div>
-
-        <div style="font-size: .65em;  color: rgb(197, 197, 197)" class="icon-line">
-            <!-- <div class="icon-line"> -->
-            <i class="fas fa-map-marker-alt icon-margin"></i> Calle San Juan #25-60 Getsemani, Cartagena
-            <!-- </div> -->
-        </div>
-    </div>
-</div>
-
-    <div id="about"></div>
-    <div class="about-background">
-        <div class="aboutheader fadewhite-header"> </div>
-        <h1 class= "caption text-center zlayer3">
-            <p></p>
-            <div class="headertext">About Us</div>
-        </h1>
-    </div>
-    <div class="page" id="aboutcontent">
-        Caf&eacute; del Mural is the culmination of a lapsed engineer and three baristas mastering
-        the art of coffee in a make-shift laboratory.
-        <p></p>
-        We want to introduce the 
-        world to a different way of drinking coffee.  As such, we provide everything from
-        a fresh take on the traditional cup of joe to a coffee-based replication of your favorite pint
-        of craft beer.  We aren't just interested in what coffee is, but what it can be.
-        <p></p>
-        We want to spread the culture of coffee.  That's why we provide educational tasting
-        and roasting experiences.
-    </div>
-    <div id="menu"></div>
-    <div class="menu-background">
-        <div class="fadewhite-header"> </div>
-        <h1 class= "caption text-center zlayer3">
-            <p></p>
-            <div class="headertext">Menu</div>
-        </h1>
-    </div>
-    <div class="page" id="menucontent">
-        <h4>Menu</h4>
-        Our Roasts: <p></p>
-        Sweet <p></p>
-        Angel <p></p>
-        Fuerte <p></p>
-        Caf&eacute; del Mural <p></p>
-        Night <p></p>
-        Mural's Cocoa <p></p>
-        Hell <p></p>
-        Caribe <p></p>
-        Kona <p></p>
-    </div>
-    <div id="forum"></div>
-    <div class="forum-background">
-        <div class="fadewhite-header"> </div>
-        <h1 class= "caption text-center zlayer3">
-            <p></p>
-            <div class="headertext">Forum</div>
-        </h1>
-    </div>
-    <div class="page" id="forumcontent">
-        <h4>Forum</h4>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magnam reprehenderit vitae suscipit, excepturi pariatur rem
-        repudiandae consectetur iste veritatis similique, accusantium ea quis cupiditate, facere adipisci debitis ipsam eveniet
-        tempore temporibus. Minima ipsam natus sequi unde totam iure, consequuntur dolorem maxime deleniti, ad autem aliquid
-        quaerat, culpa omnis perspiciatis!
-    </div>
-    <div id="contact"></div>
-    <!-- <div class="contact-background">
-        <div class="fadewhite-header"> </div>
-        <h1 class= "caption text-center zlayer3">
-            <p></p>
-            <div class="headertext">Contact</div>
-        </h1>
-    </div>
-    <div class="page" id="contactcontent">
-        <h4>Contact</h4>
-        Owner:  David Arzayus <p></p>
-        Phone:  +57 (321) 288 9323 <p></p>
-        Whats App:  +57 (321) 288 9323 <p></p>
-        Email:  cafedelmural@gmail.com <p></p>
-        Address:  Calle San Juan #25-60 <p></p>
-                Getsemani, Cartagena <p></p>
-        <p></p>
-        Hours:  Mon - Sat 3:00 - 8:00PM
-    </div> -->
-    <div class="foot">
-        <img src="img/Logo-Bright-Mod.png" class="mx-auto d-block zlayer3 mob-img-scale-foot logo-pad" style="height: 50px" alt="Cafe d&eacute;l Mural Logo">
-        <div class="foot-text">
-            <p><div class="foot-text-head">Owner</div> David Arzayus </p>
-            <p><div class="foot-text-head">Hours</div> Mon - Sat 3:00 - 8:00PM </p>
-            <p><div class="foot-text-head">Phone</div> +57 (321) 288 9323 </p>
-            <p><div class="foot-text-head">Email</div> cafedelmural@gmail.com </p>
-        </div>
-        <div class="zlayer3 icon-pos-foot socialMediaIcons">  
-            <div style="font-size:1.25em" class="icon-line">
-                <!-- <div class="icon-line"> -->
-                <a class="icon-link" href="https://www.facebook.com/CafedelMural/"> <i class="fab fa-facebook-f icon-margin"></i></a>
-                <a class="icon-link" href="https://www.instagram.com/cafedelmural/"> <i class="fab fa-instagram icon-margin"></i></a>
-                <a class="icon-link" href="https://api.whatsapp.com/send?phone=573212889323"> <i class="fab fa-whatsapp icon-margin"></i></a>
-                <!-- <i class="fas fa-phone icon-margin"></i>
-                <i class="far fa-envelope icon-margin"></i>
-                <i class="fab fa-twitter icon-margin"></i> -->
-                <a class="icon-link" href="https://www.tripadvisor.com/Restaurant_Review-g297476-d7724624-Reviews-Cafe_del_Mural-Cartagena_Cartagena_District_Bolivar_Department.html"> <i class="fab fa-tripadvisor icon-margin"></i></a>
-                <!-- </div> -->
-            </div>
-    
-            <div style="font-size: .65em;  color: rgb(197, 197, 197)" class="icon-line">
-                <!-- <div class="icon-line"> -->
-                <i class="fas fa-map-marker-alt icon-margin"></i> Calle San Juan #25-60 Getsemani, Cartagena
-                <!-- </div> -->
+        <div class="mt-auto social-container container-fluid text-white small">
+            <div class="row d-flex justify-content-center pt-3 pb-1 text-secondary social">
+                <a target="_blank" href="https://www.facebook.com/CafedelMural/"> <i class="fab fa-facebook-f icon-margin"></i></a>
+                <a target="_blank" href="https://www.instagram.com/cafedelmural/"> <i class="fab fa-instagram icon-margin"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=573212889323"> <i class="fab fa-whatsapp icon-margin"></i></a>
+                <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g297476-d7724624-Reviews-Cafe_del_Mural-Cartagena_Cartagena_District_Bolivar_Department.html"> <i class="fab fa-tripadvisor icon-margin"></i></a>
+            </div>  
+            <div class="row d-flex justify-content-center align-items-center pb-3 text-secondary location small">
+                <a target="_blank" href="https://goo.gl/maps/cqvjf5AWnWv"> <i class="fas fa-map-marker-alt pr-1"></i> Calle San Juan #25-60 Getsemani, Cartagena</a>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+        <iframe width=100% src="https://www.youtube.com/embed/Gys5H-qtYFM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="section-detail">
+            <div class="d-flex justify-content-center pt-3 pb-1 align-self-baseline text-secondary social">
+                    <a target="_blank" href="#"> <i class="fas fa-coffee icon-margin"></i></a>
+                    <a target="_blank" href="#"> <i class="fas fa-coffee icon-margin"></i></a>
+                    <a target="_blank" href="#"> <i class="fas fa-coffee icon-margin"></i></a>
+                    <a target="_blank" href="#"> <i class="fas fa-coffee icon-margin"></i></a>
+            </div>
+            <!--Caf&eacute; del Mural is the culmination of a lapsed engineer and three baristas mastering
+            the art of coffee in a make-shift laboratory.
+            <p></p>
+            We want to introduce the 
+            world to a different way of drinking coffee.  As such, we provide everything from
+            a fresh take on the traditional cup of joe to a coffee-based replication of your favorite pint
+            of craft beer.  We aren't just interested in what coffee is, but what it can be.
+            <p></p>
+            We want to spread the culture of coffee.  That's why we provide educational tasting
+            and roasting experiences.-->
+        </div>
+    </section>
+    <section id="review1">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"...elevating coffee culture throughout the entire world..." </i>
+                        <span class="nobr">&nbsp;- Tasting Table</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                         <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MENU -->
+    <section id="review2">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"...creating magic within its walls." </i>
+                        <span class="nobr">&nbsp;- Fresh Coffee Stains</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FORUM -->
+    <section id="review3">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"...David shares wisdom and knowledge, toiling amid breakers and burners..." </i>
+                        <span class="nobr">&nbsp;- The Star</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="review4">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"...more alchemist than barista..." </i>
+                        <span class="nobr">&nbsp;- Stay Inspired</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="review5">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"If you are passionate about coffee, you need to visit Caf&eacute; del Mural." </i>
+                        <span class="nobr">&nbsp;- Traveler's Cafe</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="review6">
+        <div class="section-header image-cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <i>"...set out to bring Colombian beans to Colombians." </i>
+                        <span class="nobr">&nbsp;- American Way</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <u>read more</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark text-white small footer-text">
+        <div class="row align-items-center justify-content-center text-center pt-3 pt-sm-1">
+            <div id="contact" class="col order-sm-1">
+                <div class="pb-1">David Arzayus | Owner</div>
+                <div class="pb-1">+57 (321) 288 9323 | cafedelmural@gmail.com</div>
+                <div class="pb-1">Open: Mon-Sat 3-8PM</div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center pt-3 pb-1 text-secondary social">
+            <a target="_blank" href="https://www.facebook.com/CafedelMural/"> <i class="fab fa-facebook-f icon-margin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/cafedelmural/"> <i class="fab fa-instagram icon-margin"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=573212889323"> <i class="fab fa-whatsapp icon-margin"></i></a>
+            <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g297476-d7724624-Reviews-Cafe_del_Mural-Cartagena_Cartagena_District_Bolivar_Department.html"> <i class="fab fa-tripadvisor icon-margin"></i></a>
+        </div>  
+        <div class="row d-flex justify-content-center align-items-center pb-3 text-secondary location small">
+            <a target="_blank" href="https://goo.gl/maps/cqvjf5AWnWv"> <i class="fas fa-map-marker-alt pr-1"></i> Calle San Juan #25-60 Getsemani, Cartagena</a>
+        </div>
+    </footer>
 </body>
-
 </html>
