@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #343a40;
     color: #666;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
     transition: background-color ease-out 0.33s;
 }
 /* 
@@ -58,7 +58,8 @@ This allows us to switch position of the rows for mobile
     margin: 10px;
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     border-style: solid;
-    border-color: rgba(209, 132, 45);
+    border-width: 1px;
+    border-color: rgba(197, 197, 197, 0.4);
     text-align: center;
 }
 
@@ -66,9 +67,9 @@ This allows us to switch position of the rows for mobile
     padding: 10px;
     margin: 10px;
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(40, 180, 127);
+    border-style: dashed;
+    border-width: 1px;
+    border-color: rgb(197, 197, 197);
 }
 
 .review-container {
@@ -164,7 +165,7 @@ This allows us to switch position of the rows for mobile
 
 /* social media icons */
 .menu-item > a {
-    color: black;
+    color: rgb(197, 197, 197);
 }
 .menu-item > a:hover {
     color: rgba(197, 197, 197, 0.4);
