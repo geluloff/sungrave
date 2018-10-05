@@ -50,6 +50,38 @@ This allows us to switch position of the rows for mobile
     grid-area: social;
 }
 
+.menu-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    padding: 25px;
+    margin: 10px;
+    /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-style: solid;
+    border-color: rgba(209, 132, 45);
+    text-align: center;
+}
+
+.menu-item {
+    padding: 10px;
+    margin: 10px;
+    /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(40, 180, 127);
+}
+
+.review-container {
+    height: 40vh;
+    color: #fff;
+    position: relative;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
 /* navbar styles */
 .navbar {
     transition: background-color ease-out 0.33s;
@@ -101,22 +133,6 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/umviajante-cover.jpg);
 }
 
-/* generic classes for the about, menu, and forum sections since they are all basically the same */
-.section-header {
-    height: 40vh;
-    color: #fff;
-    position: relative;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-}
-.section-detail {
-    padding: 25px;
-    margin: 10px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 /* footer styles defined here */
 .footer-image {
@@ -146,6 +162,13 @@ This allows us to switch position of the rows for mobile
     color: rgba(197, 197, 197, 0.4);
 }
 
+/* social media icons */
+.menu-item > a {
+    color: black;
+}
+.menu-item > a:hover {
+    color: rgba(197, 197, 197, 0.4);
+}
 
 /* narrow screen */
 @media (max-width: 575.98px) {
