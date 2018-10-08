@@ -55,11 +55,11 @@ This allows us to switch position of the rows for mobile
     grid-template-rows: auto;
     grid-template-columns: auto;
     padding: 25px;
-    margin: 10px;
+    /*margin: 10px; */
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    border-style: solid;
+    /*border-style: solid;
     border-width: 1px;
-    border-color: rgba(197, 197, 197, 0.4);
+    border-color: rgba(197, 197, 197, 0.4); */
     text-align: center;
 }
 
@@ -112,9 +112,21 @@ This allows us to switch position of the rows for mobile
     width: 100%;
     position: relative;
 }
-#home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/nathan-dumlao-326635-unsplash.jpg);
+
+.image-cover-repeat {
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+    position: relative;
 }
+#home.image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/nathan-dumlao-326635-unsplash-web.jpg);
+}
+
+#about .image-cover-repeat, #footer .image-cover-repeat {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+} 
+
 #review1 .image-cover {
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
 }
