@@ -73,7 +73,7 @@ This allows us to switch position of the rows for mobile
 }
 
 .review-container {
-    height: 40vh;
+    height: 35vh;
     color: #fff;
     position: relative;
     font-size: 1.25rem;
@@ -124,7 +124,7 @@ This allows us to switch position of the rows for mobile
 }
 
 #about .image-cover-repeat, #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 } 
 
 #review1 .image-cover {
