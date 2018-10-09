@@ -1,8 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #343a40;
-    color: #666;
+    /* background-color: #343a40; */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: 100% auto; */
+    width: 100%;
+    position: relative;
+    color: rgb(197, 197, 197);
     font-family: 'Open Sans', sans-serif;
     /*font-size: 1.25rem;*/
     transition: background-color ease-out 0.33s;
@@ -60,16 +66,35 @@ This allows us to switch position of the rows for mobile
     /*border-style: solid;
     border-width: 1px;
     border-color: rgba(197, 197, 197, 0.4); */
-    text-align: center;
+    /*text-align: center; */
 }
 
-.menu-item {
+.menu-subcontainer-left {
+    border-style: solid;
+    border-right: 0;
+    border-top: 0;
+    border-color: rgba(197, 197, 197, 0.6);
     padding: 10px;
-    margin: 10px;
+    margin: 0;
+}
+
+.menu-subcontainer-right {
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-color: rgba(197, 197, 197, 0.6);
+    padding: 10px;
+    margin: 0;
+}
+.menu {
+    /*padding: 10px;
+    margin: 10px; */
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    border-style: dashed;
+    /*border-style: dashed;
     border-width: 1px;
-    border-color: rgb(197, 197, 197);
+    border-color: rgb(197, 197, 197); */
+    
+
 }
 
 .review-container {
@@ -115,7 +140,7 @@ This allows us to switch position of the rows for mobile
 
 .image-cover-repeat {
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: 100% auto;
     width: 100%;
     position: relative;
 }
@@ -123,9 +148,14 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/nathan-dumlao-326635-unsplash-web.jpg);
 }
 
-#about .image-cover-repeat, #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
-} 
+/*#about .image-cover-repeat, #footer .image-cover-repeat*/
+#menu .image-cover-repeat, #footer .image-cover-repeat {
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+}
+
+#about .image-cover-repeat {
+    background-image: linear-gradient(rgba(218, 192, 143, .6), rgba(218, 192, 143, .6), rgba(218, 192, 143, .6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+}
 
 #review1 .image-cover {
     background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
@@ -175,12 +205,14 @@ This allows us to switch position of the rows for mobile
     color: rgba(197, 197, 197, 0.4);
 }
 
-/* social media icons */
-.menu-item > a {
+/* menu links */
+.menu > a {
     color: rgb(197, 197, 197);
+    text-decoration: underline;
 }
-.menu-item > a:hover {
+.menu > a:hover {
     color: rgba(197, 197, 197, 0.4);
+    text-decoration: underline;
 }
 
 /* narrow screen */
