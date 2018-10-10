@@ -10,8 +10,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link href="css/styles.css?v=2018-10-05" rel="stylesheet">
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -65,11 +66,24 @@
         </div>
     </section>
     <section id="about">
-        <div class="image-cover-repeat">
-            <div class="container" style="padding-top:30px; padding-bottom:30px; padding-left:30px; padding-right:30px;">
+        <div class="image-cover-repeat" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+            <div class="container" style="padding: 30px;">
                 <div class="row">
-                    <div class="col-xs-10 offset-xs-1 col-lg-8 offset-lg-2 embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" style="border-width:3px;border-style:solid;border-color:rgb(66, 53, 29);" src="https://www.youtube.com/embed/Gys5H-qtYFM?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+                    <div class="col-xs-10 offset-xs-1 col-md-6 embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" style="border-width:3px;border-style:solid;border-color:rgb(65, 48, 17);" src="https://www.youtube.com/embed/Gys5H-qtYFM?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col mt-3" style="color:rgb(65, 48, 17);">
+                        <blockquote class="blockquote text-center">
+                            <p>"El amor como el caf&eacute; debe ser fuerte, caliente, y a diario" </p>
+                        </blockquote>
+                        <span style="font-weight:bold"><p>EAT | DRINK | GATHER</p></span>
+                        <p>Caf&eacute; del Mural is the culmination of a lapsed engineer and three baristas mastering
+                        the art of coffee in a make-shift laboratory.
+                        </p>
+                        <p>We want to introduce the 
+                        world to a different way of drinking coffee.  As such, we provide everything from
+                        a fresh take on the traditional cup of joe to a coffee-based replication of your favorite pint
+                        of craft beer.  We aren't just interested in what coffee is, but what it can be.</p>
                     </div>
                 </div>
             </div>
@@ -79,27 +93,30 @@
     <!-- Menu -->
     <section id="menu">
         <div class="image-cover-repeat">
-            <div class="menu-container">
+            <div class="menu-container" style="padding-bottom: 0px">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row" style="padding-bottom:11.6875px;">
+                        <div class="col head-text">
                             <span style="margin-left:-15px;padding:10px;border-style:solid;border-color:rgba(197, 197, 197, 0.6);">Menu</span>
                         </div>
-                        <div class="col menu">
-                            <a target="_blank" href="#"> <span class="nobr float-right" style="text-decoration:underline;">Download Menu (PDF)</span> </a> 
+                        <div class="col head-text">
+                            <a target="_blank" href="#"> <span class="nobr float-right">Download Menu (PDF)</span> </a> 
                         </div>
                     </div>
                 </div>
                 <div class="container menu-subcontainer-left">
                     <div class="row align-items-end"> 
                         <div class="col">
-                            Hot coffee
-                            <br>Cold coffee
-                            <br>Tea
-                            <br>Juice
-                            <br>Shakes
-                            <br>Snacks and Desserts
-                            <br><span class="nobr text-responsive">House roasted coffee beans</span>
+                            <span class="head-text">Coffee</span>
+                            <br><small class="text-muted">HOT | ICED | BLACK | INFUSED However you want it!  </small>
+                            <br><span class="head-text">Roasts</span>
+                            <br><small class="text-muted">Take a bag of any of our house roasts to try at home. </small>
+                            <br><span class="head-text">Snacks and Desserts</span>
+                            <br><small class="text-muted">Pair your coffee with anything from a brownie to coste&ntilde;o-style sausage. </small>
+                            <br><span class="head-text">Juice, Tea</span>
+                            <br><small class="text-muted">For those who haven't succumbed to the dark side. </small>
+                            <br><span class="head-text">And Much More</span>
+                            <br><small class="text-muted">Check out our <a href="#">Menu</a> or ask your server. </small>
                         </div>
                         <div class="col">
                             <img src="img/coffee-cup.png" alt="" class="img-responsive float-right" style="max-width:100%;min-width:65px;">
@@ -108,21 +125,41 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col head-text">
                             <span class="float-right" style="margin-right:-15px;padding:10px;border-style:solid;border-top:0;border-color:rgba(197, 197, 197, 0.6);">Experiences</span>
                         </div>
                     </div>
                 </div>
                 <div class="container menu-subcontainer-right">
-                    <div class="row"> 
+                    <div class="row" style="margin-bottom: 15px;"> 
                         <div class="col">
-                            Tasting
-                            <br><small class="text-muted">Explore different brewing or roasting methods.  </small>
+                            <span class="head-text">Tasting</span>
+                            <br><small class="text-muted">EXPLPORE different brewing or roasting methods.  </small>
                             <br><small class="text-muted">When:  6:00 - 8:00pm | Duration:  40 minutes | Cost:  $60 | Comes with a bag of your favorite roast.</small>
-                            <br> Coffee Course
-                            <br> Roasting Classes
+                            <br><small class="text-muted"><a href="#contact">Contact us</a> to make a reservation</small>
                         </div>
                     </div>
+                    <div class="row" style="margin-bottom: 15px;"> 
+                        <div class="col">
+                                <span class="head-text">Coffee Course</span>
+                            <br><small class="text-muted">ENJOY a guided tasting session while learning about the history and culture of Colombian coffee.  </small>
+                            <br><small class="text-muted">When:  9:00 - 10:00am | Duration:  90 minutes | Cost:  $80 | Who:  Groups of 2 or more | Comes with a bag of your favorite roast.</small>
+                            <br><small class="text-muted"><a href="#contact">Contact us</a> to make a reservation</small>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col">
+                                <span class="head-text">Roasting Class</span>
+                            <br><small class="text-muted">LEARN how to roast while enjoying our house roasted brews.  </small>
+                            <br><small class="text-muted">When:  9:00 - 10:00am | Duration:  120 minutes | Cost:  $120 | Who:  Groups of 2 or more |Comes with a bag of your favorite roast.</small>
+                            <br><small class="text-muted"><a href="#contact">Contact us</a> to make a reservation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                        <div class="row">
+                            <div class="col" style="border-left-style:solid;border-left-color:rgba(197, 197, 197, 0.6);height:40px!important;"> </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -161,13 +198,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <i>"...creating magic within its walls." </i>
-                        <span class="nobr">&nbsp;- Fresh Coffee Stains</span>
+                        <span class="float-right" style="text-align:right;">
+                            <i>"...creating magic within its walls." </i>
+                            <span class="nobr">&nbsp;- Fresh Coffee Stains</span>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <u>read more</u>
+                        <span class="float-right"><u>read more</u></span>
                     </div>
                 </div>
             </div>
@@ -196,13 +235,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <i>"...more alchemist than barista..." </i>
-                        <span class="nobr">&nbsp;- Stay Inspired</span>
+                        <span class="float-right" style="text-align:right;">
+                            <i>"...more alchemist than barista..." </i>
+                            <span class="nobr">&nbsp;- Stay Inspired</span>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <u>read more</u>
+                        <span class="float-right"><u>read more</u></span>
                     </div>
                 </div>
             </div>
@@ -230,13 +271,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <i>"...set out to bring Colombian beans to Colombians." </i>
-                        <span class="nobr">&nbsp;- American Way</span>
+                        <span class="float-right" style="text-align:right;">
+                            <i>"...set out to bring Colombian beans to Colombians." </i>
+                            <span class="nobr">&nbsp;- American Way</span>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-10 offset-1">
-                        <u>read more</u>
+                        <span class="float-right"><u>read more</u></span>
                     </div>
                 </div>
             </div>
