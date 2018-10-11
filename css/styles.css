@@ -8,15 +8,27 @@ body {
     background-size: 100% auto; */
     width: 100%;
     position: relative;
-    color: rgb(197, 197, 197);
+    color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     /*font-size: 1.25rem;*/
     transition: background-color ease-out 0.33s;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 1200px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
     }
 }
 
@@ -116,7 +128,7 @@ This allows us to switch position of the rows for mobile
 }
 
 .review-container {
-    height: 35vh;
+    height: 30vh;
     color: #fff;
     position: relative;
     /* font-size: 1.25rem; */
@@ -148,6 +160,8 @@ This allows us to switch position of the rows for mobile
     /* background-color: rgb(65, 48, 17)!important; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/beanbg.jpg) !important;
     background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(197, 197, 197, .5);
 }
 
 /* image-cover class that will be used by every section */
@@ -171,11 +185,11 @@ This allows us to switch position of the rows for mobile
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #menu .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 }
 
 #about .image-cover-repeat {
@@ -221,6 +235,20 @@ This allows us to switch position of the rows for mobile
     color: rgba(197, 197, 197, 0.4);
 }
 
+/* Modal media icons */
+#contactModal {
+    color: rgb(59, 59, 59);
+}
+
+#contactModal a {
+    font-size: 1.9rem;
+    color: rgb(59, 59, 59);
+    padding: 0 15px;
+}
+#contactModal a:hover {
+    color: rgba(59, 59, 59, 0.4);
+}
+
 /* location media icons */
 .location > a {
     color: rgb(197, 197, 197);
@@ -231,11 +259,12 @@ This allows us to switch position of the rows for mobile
 }
 
 /* menu links */
-.menu > a {
+#menu a {
     color: rgb(197, 197, 197);
     text-decoration: underline;
 }
-.menu > a:hover {
+
+#menu a:hover {
     color: rgba(197, 197, 197, 0.4);
     text-decoration: underline;
 }
