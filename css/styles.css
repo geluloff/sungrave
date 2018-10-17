@@ -143,26 +143,25 @@ This allows us to switch position of the rows for mobile
 
 .review-container {
     height: 30vh;
-    color: #fff;
+    color: rgb(197, 197, 197);
     position: relative;
     /* font-size: 1.25rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, .7) inset;
     /*border-bottom-style: solid;
     border-bottom-width: 10px;
     border-bottom-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));*/
+    transition: all .33s ease-in;
 }
 
-/*.review-spacer {
-    height: 5vh;
+.review-container.active {
     color: #fff;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}*/
+    height: 40vh;
+    transition: all .33s ease-in;
+    /*box-shadow: 0px 15px 15px rgba(0, 0, 0, .7) .33s ease-in; */
+}
 
 /* navbar styles */
 .navbar {
@@ -215,10 +214,6 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 }
 
-/*.review-spacer.image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
-}*/
-
 #footer .image-cover-repeat {
     background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 }
@@ -228,24 +223,52 @@ This allows us to switch position of the rows for mobile
 }
 
 #review1 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
-}
-#review2 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2517.jpg);
-}
-#review3 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_0000.png);
-}
-#review4 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2444.jpg);
-}
-#review5 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tasting-table-cover.jpg);
-}
-#review6 .image-cover {
-    background-image: linear-gradient(rgba(255, 255, 255, .25), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/umviajante-cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
 }
 
+#review1 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_1044.jpg);;
+}
+
+#review2 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2517.jpg);
+}
+
+#review2 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_2517.jpg);
+}
+
+#review3 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_0000.png);
+}
+
+#review3 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_0000.png);
+}
+
+#review4 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2444.jpg);
+}
+
+#review4 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_2444.jpg);
+}
+
+#review5 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tasting-table-cover.jpg);
+}
+
+#review5 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/tasting-table-cover.jpg);
+}
+
+#review6 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/umviajante-cover.jpg);
+}
+
+#review6 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/umviajante-cover.jpg);
+}
 
 /* footer styles defined here */
 .footer-image {
