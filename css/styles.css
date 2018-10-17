@@ -127,6 +127,20 @@ This allows us to switch position of the rows for mobile
 
 }
 
+.review-container1 {
+    height: 30vh;
+    color: #fff;
+    position: relative;
+    /* font-size: 1.25rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    /*border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-bottom-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));*/
+}
+
 .review-container {
     height: 30vh;
     color: #fff;
@@ -136,7 +150,19 @@ This allows us to switch position of the rows for mobile
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, .7) inset;
+    /*border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-bottom-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));*/
 }
+
+/*.review-spacer {
+    height: 5vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}*/
 
 /* navbar styles */
 .navbar {
@@ -168,7 +194,7 @@ This allows us to switch position of the rows for mobile
 .image-cover {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
     position: relative;
 }
@@ -179,6 +205,7 @@ This allows us to switch position of the rows for mobile
     width: 100%;
     position: relative;
 }
+
 #home.image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/nathan-dumlao-326635-unsplash-web.jpg);
 }
@@ -187,6 +214,10 @@ This allows us to switch position of the rows for mobile
 #menu .image-cover-repeat {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
 }
+
+/*.review-spacer.image-cover-repeat {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+}*/
 
 #footer .image-cover-repeat {
     background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tim-mossholder-635962-unsplash-web.jpg);

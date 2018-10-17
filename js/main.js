@@ -35,11 +35,36 @@ $(function () {
     });
 
     //hook the scrolling so we can add/remove css classes on the navbar
+    //zoom for review section
     $(window).on('scroll', function (event) {
+        var element1Top = $('#review1').offset().top;
+        var element1Height = $('#review1').outerHeight();
+        var element2Top = $('#review2').offset().top;
+        var element2Height = $('#review2').outerHeight();
+        var element3Top = $('#review3').offset().top;
+        var element3Height = $('#review3').outerHeight();
+        var element4Top = $('#review4').offset().top;
+        var element4Height = $('#review4').outerHeight();
+        var element5Top = $('#review5').offset().top;
+        var element5Height = $('#review5').outerHeight();
+        var element6Top = $('#review6').offset().top;
+        var element6Height = $('#review6').outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+        var viewportMiddle = (viewportTop + viewportBottom) / 2;
+
         scrollValue = $(window).scrollTop();
         $nav
             .toggleClass('affix', scrollValue >= topOffset)
             .toggleClass('bg-dark', scrollValue > windowHeight - menuHeight - 15);
+
+        //stop zooming after the entire div has crossed the center
+        $(".zoom1").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element1Top), element1Height)/20)  + "%",});
+        $(".zoom2").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element2Top), element2Height)/20)  + "%",});
+        $(".zoom3").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element3Top), element3Height)/20)  + "%",});
+        $(".zoom4").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element4Top), element4Height)/20)  + "%",});
+        $(".zoom5").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element5Top), element5Height)/20)  + "%",});
+        $(".zoom6").css({backgroundSize: (100 + Math.min(Math.max(0, viewportMiddle - element6Top), element6Height)/20)  + "%",});
     });
 
     //handle nav anchors with fragment identifier (<url>#something)
@@ -53,4 +78,5 @@ $(function () {
             $('html, body').animate({ scrollTop: top }, 333);
         }
     });
+
 });
