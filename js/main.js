@@ -40,18 +40,20 @@ $(function () {
         var viewportTop = $(window).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
         var viewportMiddle = (viewportTop + viewportBottom) / 2;
-        var currentMiddleElement = $(document.elementFromPoint($(window).width() / 2, viewportMiddle));
+        var currentMiddleElement = $(document.elementFromPoint($(window).width() / 2, windowHeight / 2));
 
         scrollValue = $(window).scrollTop();
         $nav
             .toggleClass('affix', scrollValue >= topOffset)
             .toggleClass('bg-dark', scrollValue > windowHeight - menuHeight - 15);
 
+        
         //apply active class to reviews when at center of window
-        if (currentMiddleElement.is('.review')) {
+        if (currentMiddleElement.is('.review-container') || currentMiddleElement.parent('.review-container').length) {
+            $('.review-container').removeClass('active');
             currentMiddleElement.addClass('active');
         }
-    });
+        });
 
     //handle nav anchors with fragment identifier (<url>#something)
     $nav.find('a').click(function (event) {
