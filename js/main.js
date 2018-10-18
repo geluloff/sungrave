@@ -22,7 +22,6 @@ $(function () {
         $navMenu.collapse('hide'); 
     });
     
-
     //initial logic in case window is not scrolled to top
     $nav
         .toggleClass('affix', scrollValue > topOffset)
