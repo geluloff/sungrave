@@ -191,6 +191,14 @@ This allows us to switch position of the rows for mobile
     border-bottom-color: rgba(197, 197, 197, .5);
 }
 
+/* overwrite navbar link styling to make them more visible */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255 , 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold;
+}
 /* image-cover class that will be used by every section */
 .image-cover {
     background-repeat: no-repeat;

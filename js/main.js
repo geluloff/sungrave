@@ -1,6 +1,7 @@
 $(function () {
     //declare anything that will be used more than once
     const $nav = $('.navbar');
+    const $navMenuUl = $('.navbar-nav');
     const $navMenu = $('#navbarResponsive');
     const menuHeight = $nav.outerHeight();
     let topOffset = $nav.offset().top;
@@ -26,6 +27,12 @@ $(function () {
     $nav
         .toggleClass('affix', scrollValue > topOffset)
         .toggleClass('bg-dark', scrollValue > windowHeight - menuHeight);
+    
+    $navMenuUl
+        .toggleClass('mx-sm-auto', scrollValue <= windowHeight - menuHeight)
+        .toggleClass('ml-sm-auto', scrollValue > windowHeight - menuHeight)
+        .toggleClass('mx-md-auto', scrollValue > windowHeight - menuHeight);
+
 
     //these values depend on window size, so they have to be reset if someone resizes the window
     $(window).on('resize', function() {
@@ -46,6 +53,10 @@ $(function () {
             .toggleClass('affix', scrollValue >= topOffset)
             .toggleClass('bg-dark', scrollValue > windowHeight - menuHeight - 15);
 
+        $navMenuUl
+            .toggleClass('mx-sm-auto', scrollValue <= windowHeight - menuHeight - 15)
+            .toggleClass('ml-sm-auto', scrollValue > windowHeight - menuHeight - 15)
+            .toggleClass('mx-md-auto', scrollValue > windowHeight - menuHeight - 15);
         
         //apply active class to reviews when at center of window
         if (currentMiddleElement.is('.review-container') || currentMiddleElement.parent('.review-container').length) {
@@ -65,5 +76,4 @@ $(function () {
             $('html, body').animate({ scrollTop: top }, 333);
         }
     });
-
 });
