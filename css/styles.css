@@ -174,6 +174,7 @@ This allows us to switch position of the rows for mobile
     width:100%;
     z-index: 1;
 }
+
 .navbar-brand {
     display: none;
     position: absolute;
@@ -192,12 +193,21 @@ This allows us to switch position of the rows for mobile
 }
 
 /* overwrite navbar link styling to make them more visible */
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-langsel .nav-link {
     color: rgba(255, 255, 255 , 0.8);
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
     font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: rgba(0,0,0,.75);
+    color: rgba(255, 255, 255 , 0.8);
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, .8);
 }
 /* image-cover class that will be used by every section */
 .image-cover {
