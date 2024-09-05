@@ -186,7 +186,7 @@ This allows us to switch position of the rows for mobile
 .navbar.bg-dark {
     opacity: 0.95;
     /* background-color: rgb(65, 48, 17)!important; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG _ HQ Denver_webonly_Singles-14.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg.jpg) !important;
     background-size: cover;
     border-bottom-style: solid;
     border-bottom-color: rgba(197, 197, 197, .5);
@@ -226,16 +226,16 @@ This allows us to switch position of the rows for mobile
 }
 
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/SG _ HQ Denver_webonly_Singles-71.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #menu .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG _ HQ Denver_webonly_Singles-73.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG _ HQ Denver_webonly_Singles-82.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 }
 
 #about .image-cover-repeat {
