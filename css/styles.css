@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-size: 100% auto; */
+    overflow-x: hidden; /* Prevent horizontal overflow */
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
@@ -226,7 +227,7 @@ This allows us to switch position of the rows for mobile
 }
 
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/SG_HQ_Denver_Band_Bow.jpg);
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
@@ -394,4 +395,20 @@ span.nobr { white-space: nowrap; }
 
 .text-muted {
     color: #9d9da5!important
+}
+
+.four-vertical-images {
+    display: flex;
+    height: 100vh;      /* Full viewport height */
+    width: 100vw;       /* Full viewport width */
+    margin: 0;          /* Remove any extra margins */
+    padding: 0;         /* Remove any padding */
+    overflow: hidden;  /* Prevent any overflow within the flexbox */
+}
+
+.four-vertical-images img {
+    width: 25vw;    /* Force each image to take up 25% of the viewport width */
+    height: 100vh;  /* Make each image take the full height of the viewport */
+    object-fit: cover;  /* Ensure images cover their containers without distortion */
+    box-sizing: border-box;  /* Ensure padding and border don't affect width */
 }
