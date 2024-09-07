@@ -77,3 +77,22 @@ $(function () {
         }
     });
 });
+
+$(document).ready(function(){
+    $('#myCarousel').on('slid.bs.carousel', function () {
+      var $this = $(this);
+      var $activeItem = $this.find('.carousel-item.active');
+      var $nextItem = $activeItem.next('.carousel-item');
+  
+      if ($nextItem.length === 0) {
+        $nextItem = $this.find('.carousel-item').first();
+      }
+  
+      var nextImgSrc1 = $nextItem.find('.col-6').first().find('img').attr('src');
+      var nextImgSrc2 = $nextItem.find('.col-6').last().find('img').attr('src');
+  
+      // Update the active carousel item with new images
+      $activeItem.find('.col-6').first().find('img').attr('src', nextImgSrc1);
+      $activeItem.find('.col-6').last().find('img').attr('src', nextImgSrc2);
+    });
+});

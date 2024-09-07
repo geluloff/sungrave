@@ -412,3 +412,17 @@ span.nobr { white-space: nowrap; }
     object-fit: cover;  /* Ensure images cover their containers without distortion */
     box-sizing: border-box;  /* Ensure padding and border don't affect width */
 }
+
+.carousel-inner .carousel-item {
+    display: flex;
+    align-items: center;
+}
+  
+.carousel-inner .carousel-item .col-6 {
+    padding: 0;
+}
+  
+.carousel-inner .carousel-item img {
+    width: 25vw;    /* Force each image to take up 25% of the viewport width */
+    height: 100vh;  /* Make each image take the full height of the viewport */
+}
