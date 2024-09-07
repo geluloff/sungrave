@@ -78,6 +78,7 @@ $(function () {
     });
 });
 
+/*
 $(document).ready(function(){
     $('#myCarousel').on('slid.bs.carousel', function () {
       var $this = $(this);
@@ -96,3 +97,4 @@ $(document).ready(function(){
       $activeItem.find('.col-6').last().find('img').attr('src', nextImgSrc2);
     });
 });
+*/
