@@ -210,6 +210,7 @@ This allows us to switch position of the rows for mobile
 .dropdown-item {
     color: rgba(255, 255, 255, .8);
 }
+
 /* image-cover class that will be used by every section */
 .image-cover {
     background-repeat: no-repeat;
@@ -227,7 +228,23 @@ This allows us to switch position of the rows for mobile
 }
 
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/SG_HQ_Denver_Band_Bow.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+
+    /* Control the placement of the images */
+    background-position: 0vw 0vh, 25vw 0vh, 50vw 0vh, 75vw, 0vh;
+    background-size: 25vw 100vh, 25vw 100vh, 25vw 100vh, 25vw 100vh;
+    background-repeat: no-repeat; /* No repetition of the images */
+
+    /* Set the container to take up the full screen width and height */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any overflow */
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
@@ -397,23 +414,24 @@ span.nobr { white-space: nowrap; }
     color: #9d9da5!important
 }
 
+/*
 .four-vertical-images {
     display: flex;
-    height: 100vh;      /* Full viewport height */
-    width: 100vw;       /* Full viewport width */
-    margin: 0;          /* Remove any extra margins */
-    padding: 0;         /* Remove any padding */
-    overflow: hidden;  /* Prevent any overflow within the flexbox */
+    height: 100vh;      /* Full viewport height 
+    width: 100vw;       /* Full viewport width 
+    margin: 0;          /* Remove any extra margins 
+    padding: 0;         /* Remove any padding 
+    overflow: hidden;  /* Prevent any overflow within the flexbox 
 }
 
 .four-vertical-images img {
-    width: 25vw;    /* Force each image to take up 25% of the viewport width */
-    height: 100vh;  /* Make each image take the full height of the viewport */
-    object-fit: cover;  /* Ensure images cover their containers without distortion */
-    box-sizing: border-box;  /* Ensure padding and border don't affect width */
+    width: 25vw;    /* Force each image to take up 25% of the viewport width 
+    height: 100vh;  /* Make each image take the full height of the viewport 
+    object-fit: cover;  /* Ensure images cover their containers without distortion 
+    box-sizing: border-box;  /* Ensure padding and border don't affect width 
 }
 
-/*
+
 .carousel-inner .carousel-item {
     display: flex;
     align-items: center;
