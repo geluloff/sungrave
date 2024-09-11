@@ -87,11 +87,12 @@ body {
 }
 .landing > .landing-img.landing-nate {
     background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-position-y: 20%;
 }
 .landing > .landing-img.landing-nick {
     background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
-    background-position-y: 20%;
-    background-position-x:0%;
+    background-position-y: 23%;
+    background-position-x: 0%;
 }
 
 @media (min-width: 576px) {
