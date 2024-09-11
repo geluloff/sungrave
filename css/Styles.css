@@ -77,20 +77,20 @@ body {
     height: 25vh;
 }
 .landing > .landing-img.landing-grant {
-    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 }
 .landing > .landing-img.landing-joe {
-    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
     background-position-y: 45%;
     background-size: 120%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nate {
-    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
     background-position-y: 20%;
 }
 .landing > .landing-img.landing-nick {
-    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
     background-position-y: 23%;
     background-position-x: 0%;
 }
@@ -289,6 +289,7 @@ This allows us to switch position of the rows for mobile
  .navbar-brand {
     font-family: 'Cormorant';
 }
+
 /*.navbar.bg-dark .navbar-brand {
     display: block;
 }
