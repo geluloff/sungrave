@@ -10,7 +10,7 @@ body {
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cormorant';
     /*font-size: 1.25rem;*/
     transition: background-color ease-out 0.33s;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .head-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cormorant';
     /* font-weight: bold; */
 }
 
@@ -71,7 +71,7 @@ This allows us to switch position of the rows for mobile
     max-width: 15rem; 
     width: 90vw;
     grid-area: logo;
-    font-family: 'Helvetica Neue';
+    font-family: 'Cormorant';
     color: #fff;
 }
 .home-container nav {
@@ -179,7 +179,7 @@ This allows us to switch position of the rows for mobile
 .navbar-brand {
     display: none;
     position: absolute;
-    font-family: 'Bad Script';
+    font-family: 'Cormorant';
 }
 .navbar.bg-dark .navbar-brand {
     display: block;
