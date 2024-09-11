@@ -71,7 +71,7 @@ This allows us to switch position of the rows for mobile
     max-width: 15rem; 
     width: 90vw;
     grid-area: logo;
-    font-family: 'Bad Script';
+    font-family: 'Helvetica Neue';
     color: #fff;
 }
 .home-container nav {
@@ -187,7 +187,7 @@ This allows us to switch position of the rows for mobile
 .navbar.bg-dark {
     opacity: 0.95;
     /* background-color: rgb(65, 48, 17)!important; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg) !important;
     background-size: cover;
     border-bottom-style: solid;
     border-bottom-color: rgba(197, 197, 197, .5);
@@ -211,6 +211,37 @@ This allows us to switch position of the rows for mobile
     color: rgba(255, 255, 255, .8);
 }
 
+/* top-panel */
+
+.top-panel {
+    height:100vh;
+}
+
+.top-panel > .top-img {
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.top-panel > .top-img.img-nick {
+    background-image:  linear-gradient(rgba(227, 25, 25, 0.6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+}
+.top-panel > .top-img.img-joe {
+    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
+}
+.top-panel > .top-img.img-nate {
+    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
+}
+.top-panel > .top-img.img-grant {
+    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+}
+
+@media (min-width: 768px) {
+    .top-panel > .top-img {
+        background-position-y: center;
+    }
+}
+
 /* image-cover class that will be used by every section */
 .image-cover {
     background-repeat: no-repeat;
@@ -228,23 +259,7 @@ This allows us to switch position of the rows for mobile
 }
 
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-    url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
-
-    /* Control the placement of the images */
-    background-position: 0vw 0vh, 25vw 0vh, 50vw 0vh, 75vw, 0vh;
-    background-size: 25vw 100vh, 25vw 100vh, 25vw 100vh, 25vw 100vh;
-    background-repeat: no-repeat; /* No repetition of the images */
-
-    /* Set the container to take up the full screen width and height */
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Prevent any overflow */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
@@ -413,36 +428,3 @@ span.nobr { white-space: nowrap; }
 .text-muted {
     color: #9d9da5!important
 }
-
-/*
-.four-vertical-images {
-    display: flex;
-    height: 100vh;      /* Full viewport height 
-    width: 100vw;       /* Full viewport width 
-    margin: 0;          /* Remove any extra margins 
-    padding: 0;         /* Remove any padding 
-    overflow: hidden;  /* Prevent any overflow within the flexbox 
-}
-
-.four-vertical-images img {
-    width: 25vw;    /* Force each image to take up 25% of the viewport width 
-    height: 100vh;  /* Make each image take the full height of the viewport 
-    object-fit: cover;  /* Ensure images cover their containers without distortion 
-    box-sizing: border-box;  /* Ensure padding and border don't affect width 
-}
-
-
-.carousel-inner .carousel-item {
-    display: flex;
-    align-items: center;
-}
-  
-.carousel-inner .carousel-item .col-6 {
-    padding: 0;
-}
-  
-.carousel-inner .carousel-item img {
-    width: 25vw;    /* Force each image to take up 25% of the viewport width 
-    height: 100vh;  /* Make each image take the full height of the viewport 
-}
-*/ 
