@@ -1,18 +1,13 @@
 body {
     padding: 0;
     margin: 0;
-    /* background-color: #343a40; */
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-    background-size: 100% auto; */
     overflow-x: hidden; /* Prevent horizontal overflow */
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
     font-family: 'Cormorant';
     /*font-size: 1.25rem;*/
-    transition: background-color ease-out 0.33s;
+    /* transition: background-color ease-out 0.33s; */
 }
 
 @media (max-width: 768px) {
@@ -33,10 +28,125 @@ body {
     }
 }
 
+.navbar-brand {
+    font-size: 3rem;
+    font-weight: bold;
+}
+#sungrave-navbar {
+    position: absolute;
+    top: -1px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+#sungrave-navbar.is-pinned {
+    position: fixed;
+    height: auto;
+    z-index: 1;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    transition: background-color ease-out 0.33s;
+}
+#sungrave-nav-container {
+    top: -1px;
+}
+#sungrave-navbar.is-pinned #sungrave-nav-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between !important;
+}
+#sungrave-navbar.is-pinned #sungrave-nav-container .navbar-collapse {
+    flex-direction: row !important;
+    align-items: baseline;
+}
+
+/* overwrite navbar link styling to make them more visible */
+.navbar .navbar-nav .nav-link, .navbar-dark .navbar-langsel .nav-link {
+    color: rgba(255, 255, 255 , 0.8);
+}
+
+
+
+
+.landing > .landing-img {
+    background-size: cover;
+    background-position-x:100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 25vh;
+}
+.landing > .landing-img.landing-grant {
+    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+}
+.landing > .landing-img.landing-joe {
+    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
+    background-position-y: 45%;
+    background-size: 120%;
+    background-position-x: 50%;
+}
+.landing > .landing-img.landing-nate {
+    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-position-y: 20%;
+}
+.landing > .landing-img.landing-nick {
+    background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
+    background-position-y: 23%;
+    background-position-x: 0%;
+}
+
+@media (min-width: 576px) {
+    .landing > .landing-img {
+        width: 25vw;
+        height: auto;
+    }
+    .landing > .landing-img.landing-joe {
+        background-position-y: 80%;
+        background-position-x: 50%;
+        background-size: 200%;
+    }
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav .nav-link {
+        border-bottom: 3px solid transparent;
+    }
+    .navbar.is-pinned .navbar-nav .nav-link.active {
+        border-bottom-color: rgba(255, 255, 255 , 0.8);
+    }
+}
+.modal.fade .modal-dialog {
+    transition: transform 0.25s ease-out;
+    transform: scale(0.8);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modal.fade .modal-dialog {
+      transition: none;
+    }
+  }
+  .modal.show .modal-dialog {
+    transform: none;
+  }
+  .modal.modal-static .modal-dialog {
+    transform: scale(1.02);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .head-text {
     font-family: 'Cormorant';
     /* font-weight: bold; */
 }
+
 
 /* 
 The darken-overlay class will be applied to the body in JS.  
@@ -167,40 +277,29 @@ This allows us to switch position of the rows for mobile
 }
 
 /* navbar styles */
-.navbar {
+/* .navbar {
     transition: background-color ease-out 0.33s;
 }
 .navbar.affix {
     position: fixed;
     width:100%;
     z-index: 1;
-}
+} */
 
-.navbar-brand {
-    display: none;
-    position: absolute;
+ .navbar-brand {
     font-family: 'Cormorant';
 }
-.navbar.bg-dark .navbar-brand {
+
+/*.navbar.bg-dark .navbar-brand {
     display: block;
 }
 .navbar.bg-dark {
     opacity: 0.95;
-    /* background-color: rgb(65, 48, 17)!important; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg.jpg) !important;
     background-size: cover;
     border-bottom-style: solid;
     border-bottom-color: rgba(197, 197, 197, .5);
-}
-
-/* overwrite navbar link styling to make them more visible */
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-langsel .nav-link {
-    color: rgba(255, 255, 255 , 0.8);
-}
-
-.navbar-dark .navbar-nav .nav-link.active {
-    font-weight: bold;
-}
+} */
 
 .dropdown-menu {
     background-color: rgba(0,0,0,.75);
@@ -209,37 +308,6 @@ This allows us to switch position of the rows for mobile
 
 .dropdown-item {
     color: rgba(255, 255, 255, .8);
-}
-
-/* top-panel */
-
-.top-panel {
-    height:100vh;
-}
-
-.top-panel > .top-img {
-    background-size: cover;
-    background-position-y: top;
-    background-repeat: no-repeat;
-}
-
-.top-panel > .top-img.img-nick {
-    background-image:  linear-gradient(rgba(227, 25, 25, 0.6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
-}
-.top-panel > .top-img.img-joe {
-    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
-}
-.top-panel > .top-img.img-nate {
-    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
-}
-.top-panel > .top-img.img-grant {
-    background-image:  linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
-}
-
-@media (min-width: 768px) {
-    .top-panel > .top-img {
-        background-position-y: center;
-    }
 }
 
 /* image-cover class that will be used by every section */
@@ -259,7 +327,23 @@ This allows us to switch position of the rows for mobile
 }
 
 #home.image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
+    url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+
+    /* Control the placement of the images */
+    background-position: 0vw 0vh, 25vw 0vh, 50vw 0vh, 75vw, 0vh;
+    background-size: 25vw 100vh, 25vw 100vh, 25vw 100vh, 25vw 100vh;
+    background-repeat: no-repeat; /* No repetition of the images */
+
+    /* Set the container to take up the full screen width and height */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any overflow */
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
@@ -348,12 +432,14 @@ This allows us to switch position of the rows for mobile
 }
 
 #contactModal a {
-    font-size: 1.9rem;
     color: rgb(59, 59, 59);
     padding: 0 15px;
 }
 #contactModal a:hover {
-    color: rgba(59, 59, 59, 0.4);
+    color: rgba(59, 59, 59, 0.6);
+}
+#contactModal a.media-link{
+    font-size: 1.9rem;
 }
 
 /* location media icons */
@@ -428,3 +514,36 @@ span.nobr { white-space: nowrap; }
 .text-muted {
     color: #9d9da5!important
 }
+
+/*
+.four-vertical-images {
+    display: flex;
+    height: 100vh;      /* Full viewport height 
+    width: 100vw;       /* Full viewport width 
+    margin: 0;          /* Remove any extra margins 
+    padding: 0;         /* Remove any padding 
+    overflow: hidden;  /* Prevent any overflow within the flexbox 
+}
+
+.four-vertical-images img {
+    width: 25vw;    /* Force each image to take up 25% of the viewport width 
+    height: 100vh;  /* Make each image take the full height of the viewport 
+    object-fit: cover;  /* Ensure images cover their containers without distortion 
+    box-sizing: border-box;  /* Ensure padding and border don't affect width 
+}
+
+
+.carousel-inner .carousel-item {
+    display: flex;
+    align-items: center;
+}
+  
+.carousel-inner .carousel-item .col-6 {
+    padding: 0;
+}
+  
+.carousel-inner .carousel-item img {
+    width: 25vw;    /* Force each image to take up 25% of the viewport width 
+    height: 100vh;  /* Make each image take the full height of the viewport 
+}
+*/ 
