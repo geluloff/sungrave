@@ -8,7 +8,7 @@ body {
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cormorant';
     /*font-size: 1.25rem;*/
     /* transition: background-color ease-out 0.33s; */
 }
@@ -92,11 +92,12 @@ a > .social-link {
 }
 .landing > .landing-img.landing-nate {
     background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-position-y: 20%;
 }
 .landing > .landing-img.landing-nick {
     background-image: url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
-    background-position-y: 20%;
-    background-position-x:0%;
+    background-position-y: 23%;
+    background-position-x: 0%;
 }
 
 @media (min-width: 576px) {
@@ -147,7 +148,7 @@ a > .social-link {
 
 
 .head-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cormorant';
     /* font-weight: bold; */
 }
 
@@ -185,7 +186,7 @@ This allows us to switch position of the rows for mobile
     max-width: 15rem; 
     width: 90vw;
     grid-area: logo;
-    font-family: 'Bad Script';
+    font-family: 'Cormorant';
     color: #fff;
 }
 .home-container nav {
@@ -291,8 +292,9 @@ This allows us to switch position of the rows for mobile
 } */
 
  .navbar-brand {
-    font-family: 'Bad Script';
+    font-family: 'Cormorant';
 }
+
 /*.navbar.bg-dark .navbar-brand {
     display: block;
 }
