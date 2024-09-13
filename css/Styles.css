@@ -357,43 +357,44 @@ This allows us to switch position of the rows for mobile
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(/img/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #about .image-cover-repeat {
-    background-image: linear-gradient(rgba(218, 192, 143, .7), rgba(218, 192, 143, .7), rgba(218, 192, 143, .7)), url(/img/tim-mossholder-635962-unsplash-web.jpg);
+    background-position: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/img/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #review1 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_1044.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(/img/faeton.png);
 }
 
 #review1 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_1044.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/faeton.png);
 }
 
 #review2 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2517.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(/img/metalperver.jpg);
 }
 
 #review2 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_2517.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/metalperver.jpg);
 }
 
 #review3 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_0000.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(/img/mariana.png);
 }
 
 #review3 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_0000.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/mariana.png);
 }
 
 #review4 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/DSC_2444.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(/img/arcticdrones.jpg);
 }
 
 #review4 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/DSC_2444.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/arcticdrones.jpg);
 }
 
 #review5 .image-cover {
