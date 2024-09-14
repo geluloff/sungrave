@@ -368,11 +368,11 @@ This allows us to switch position of the rows for mobile
 }
 
 #review1 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/faeton.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/Faeton.png);
 }
 
 #review1 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/faeton.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Faeton.png);
 }
 
 #review2 .image-cover {
@@ -384,11 +384,11 @@ This allows us to switch position of the rows for mobile
 }
 
 #review3 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../img/mariana.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../img/Mariana.png);
 }
 
 #review3 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/mariana.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Mariana.png);
 }
 
 #review4 .image-cover {
