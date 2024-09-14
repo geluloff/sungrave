@@ -8,7 +8,7 @@ body {
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
-    font-family: 'Cormorant';
+    font-family: 'Philosopher';
     /*font-size: 1.25rem;*/
     /* transition: background-color ease-out 0.33s; */
 }
@@ -82,20 +82,20 @@ a > .social-link {
     height: 25vh;
 }
 .landing > .landing-img.landing-grant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 }
 .landing > .landing-img.landing-joe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
     background-position-y: 45%;
     background-size: 120%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nate {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
     background-position-y: 20%;
 }
 .landing > .landing-img.landing-nick {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
     background-position-y: 23%;
     background-position-x: 0%;
 }
@@ -148,7 +148,7 @@ a > .social-link {
 
 
 .head-text {
-    font-family: 'Cormorant';
+    font-family: 'Philosopher';
     /* font-weight: bold; */
 }
 
@@ -186,7 +186,7 @@ This allows us to switch position of the rows for mobile
     max-width: 15rem; 
     width: 90vw;
     grid-area: logo;
-    font-family: 'Cormorant';
+    font-family: 'Philosopher';
     color: #fff;
 }
 .home-container nav {
@@ -292,7 +292,9 @@ This allows us to switch position of the rows for mobile
 } */
 
  .navbar-brand {
-    font-family: 'Cormorant';
+    font-family: 'Philosopher';
+    font-weight:  400;
+    letter-spacing: 0.35rem;
 }
 
 /*.navbar.bg-dark .navbar-brand {
