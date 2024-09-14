@@ -302,7 +302,7 @@ This allows us to switch position of the rows for mobile
 }
 .navbar.bg-dark {
     opacity: 0.95;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg.jpg) !important;
     background-size: cover;
     border-bottom-style: solid;
     border-bottom-color: rgba(197, 197, 197, .5);
@@ -335,10 +335,10 @@ This allows us to switch position of the rows for mobile
 
 #home.image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-    url(/img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
-    url(/img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
+    url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
+    url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
+    url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 
     /* Control the placement of the images */
     background-position: 0vw 0vh, 25vw 0vh, 50vw 0vh, 75vw, 0vh;
@@ -359,60 +359,60 @@ This allows us to switch position of the rows for mobile
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(/img/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #about .image-cover-repeat {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/img/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #review1 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(/img/faeton.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/faeton.png);
 }
 
 #review1 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/faeton.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/faeton.png);
 }
 
 #review2 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(/img/metalperver.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/metalperver.jpg);
 }
 
 #review2 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/metalperver.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/metalperver.jpg);
 }
 
 #review3 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(/img/mariana.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../img/mariana.png);
 }
 
 #review3 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/mariana.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/mariana.png);
 }
 
 #review4 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(/img/arcticdrones.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/arcticdrones.jpg);
 }
 
 #review4 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/arcticdrones.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/arcticdrones.jpg);
 }
 
 #review5 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/tasting-table-cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/tasting-table-cover.jpg);
 }
 
 #review5 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/tasting-table-cover.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/tasting-table-cover.jpg);
 }
 
 #review6 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(/img/umviajante-cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/umviajante-cover.jpg);
 }
 
 #review6 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(/img/umviajante-cover.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/umviajante-cover.jpg);
 }
 
 /* footer styles defined here */
