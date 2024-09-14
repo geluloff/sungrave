@@ -243,7 +243,7 @@ This allows us to switch position of the rows for mobile
 
 }
 
-.review-container1 {
+.news-container1 {
     height: 30vh;
     color: #fff;
     position: relative;
@@ -257,7 +257,7 @@ This allows us to switch position of the rows for mobile
     border-bottom-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));*/
 }
 
-.review-container {
+.news-container {
     height: 30vh;
     color: rgba(197, 197, 197, .7);
     position: relative;
@@ -274,7 +274,7 @@ This allows us to switch position of the rows for mobile
     transition: all .1s ease-in;
 }
 
-.review-container.active {
+.news-container.active {
     color: #fff;
     height: 40vh;
     box-shadow: none;
@@ -367,51 +367,51 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
-#review1 .image-cover {
+#news1 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/Faeton.png);
 }
 
-#review1 .image-cover.active {
+#news1 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Faeton.png);
 }
 
-#review2 .image-cover {
+#news2 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/metalperver.jpg);
 }
 
-#review2 .image-cover.active {
+#news2 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/metalperver.jpg);
 }
 
-#review3 .image-cover {
+#news3 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../img/Mariana.png);
 }
 
-#review3 .image-cover.active {
+#news3 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Mariana.png);
 }
 
-#review4 .image-cover {
+#news4 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/arcticdrones.jpg);
 }
 
-#review4 .image-cover.active {
+#news4 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/arcticdrones.jpg);
 }
 
-#review5 .image-cover {
+#news5 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/tasting-table-cover.jpg);
 }
 
-#review5 .image-cover.active {
+#news5 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/tasting-table-cover.jpg);
 }
 
-#review6 .image-cover {
+#news6 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/umviajante-cover.jpg);
 }
 
-#review6 .image-cover.active {
+#news6 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/umviajante-cover.jpg);
 }
 
@@ -471,23 +471,23 @@ This allows us to switch position of the rows for mobile
     text-decoration: underline;
 }
 
-/* review links */
-.review-container a {
+/* news links */
+.news-container a {
     color: rgb(197, 197, 197, .7);
     text-decoration: underline;
 }
 
-.review-container a:hover {
+.news-container a:hover {
     color: rgba(197, 197, 197, 0.4);
     text-decoration: underline;
 }
 
-.review-container.active a {
+.news-container.active a {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-.review-container.active a:hover {
+.news-container.active a:hover {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: underline;
 }
