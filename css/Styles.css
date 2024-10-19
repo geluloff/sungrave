@@ -197,12 +197,13 @@ This allows us to switch position of the rows for mobile
 }
 
 @media (min-width: 1200px) {
-    .menu-container{
+    .lisent-container{
         max-width: 970px;
     }
 }
 
-.menu-container {
+/*
+.listen-container {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
@@ -215,9 +216,10 @@ This allows us to switch position of the rows for mobile
     border-width: 1px;
     border-color: rgba(197, 197, 197, 0.4); */
     /*text-align: center; */
-}
+/*}
+*/
 
-.menu-subcontainer-left {
+/*.listen-subcontainer-left {
     border-style: solid;
     border-right: 0;
     border-top: 0;
@@ -225,23 +227,21 @@ This allows us to switch position of the rows for mobile
     padding: 10px;
 }
 
-.menu-subcontainer-right {
+.listen-subcontainer-right {
     border-style: solid;
     border-top: 0;
     border-left: 0;
     border-color: rgba(197, 197, 197, 0.6);
     padding: 10px;
 }
-.menu {
+.listen {
     /*padding: 10px;
     margin: 10px; */
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /*border-style: dashed;
     border-width: 1px;
-    border-color: rgb(197, 197, 197); */
-    
-
-}
+    border-color: rgb(197, 197, 197);
+}*/
 
 .news-container1 {
     height: 30vh;
@@ -308,7 +308,7 @@ This allows us to switch position of the rows for mobile
     border-bottom-color: rgba(197, 197, 197, .5);
 } */
 
-.dropdown-menu {
+.dropdown-listen {
     background-color: rgba(0,0,0,.75);
     color: rgba(255, 255, 255 , 0.8);
 }
@@ -354,8 +354,19 @@ This allows us to switch position of the rows for mobile
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
-#menu .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
+#listen .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0,0,0,0.6)), url(../img/IDYLL_Release_Show.jpg);
+    background-size: contain;
+
+    /* Fills the remaining space with a dark color */
+    background-color: #000; 
+
+    /* Set the container to take up the full screen width and height */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any overflow */
 }
 
 #footer .image-cover-repeat {
@@ -491,13 +502,13 @@ This allows us to switch position of the rows for mobile
     color: rgba(197, 197, 197, 0.4);
 }
 
-/* menu links */
-#menu a {
+/* listen links */
+#listen a {
     color: rgb(197, 197, 197);
     text-decoration: underline;
 }
 
-#menu a:hover {
+#listen a:hover {
     color: rgba(197, 197, 197, 0.4);
     text-decoration: underline;
 }
