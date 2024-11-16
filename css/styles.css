@@ -52,6 +52,10 @@ body {
 }
 #sungrave-nav-container {
     top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Adds space between elements */
 }
 #sungrave-navbar.is-pinned #sungrave-nav-container {
     display: flex !important;
@@ -295,6 +299,18 @@ This allows us to switch position of the rows for mobile
     font-family: 'Philosopher';
     font-weight:  400;
     letter-spacing: 0.35rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+    max-height: 100%;
+}
+
+.navbar-brand img.logo {
+    width: 100%; /* Ensure the logo scales */
+    max-width: calc(100vw - 150px); /* Subtract space for dropdowns or other items */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures proper scaling */
 }
 
 /*.navbar.bg-dark .navbar-brand {
