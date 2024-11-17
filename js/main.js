@@ -74,3 +74,37 @@ const sungrave = (function() {
     };
 })();
 document.addEventListener('DOMContentLoaded', sungrave.setUp);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+
+    // Define sections to show based on hash
+    const sections = {
+        "#sneakpeek": "listen" //,
+        //"#preview": "about",
+    };
+
+    const navItems = {
+        "#sneakpeek": "nav-listen",
+    };
+
+    // Hide all sections first
+    Object.values(sections).forEach(sectionId => {
+        document.getElementById(sectionId)?.classList.add("hidden");
+    });
+
+    // Hide all navbar items
+    Object.values(navItems).forEach(navId => {
+        document.getElementById(navId)?.classList.add("hidden");
+    });
+
+    // Show the relevant section if hash matches
+    if (sections[hash]) {
+        document.getElementById(sections[hash])?.classList.remove("hidden");
+    }
+
+    // Show the relevant navbar item if hash matches
+    if (navItems[hash]) {
+        document.getElementById(navItems[hash])?.classList.remove("hidden");
+    }
+});

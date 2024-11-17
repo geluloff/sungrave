@@ -1,3 +1,7 @@
+.hidden {
+    display: none; /* Hides the section completely */
+}
+
 .navbar-dark {
     --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28254, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -206,47 +210,6 @@ This allows us to switch position of the rows for mobile
     }
 }
 
-/*
-.listen-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    padding: 25px;
-    margin-left:auto;
-    margin-right:auto;
-    /*margin: 10px; */
-    /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    /*border-style: solid;
-    border-width: 1px;
-    border-color: rgba(197, 197, 197, 0.4); */
-    /*text-align: center; */
-/*}
-*/
-
-/*.listen-subcontainer-left {
-    border-style: solid;
-    border-right: 0;
-    border-top: 0;
-    border-color: rgba(197, 197, 197, 0.6);
-    padding: 10px;
-}
-
-.listen-subcontainer-right {
-    border-style: solid;
-    border-top: 0;
-    border-left: 0;
-    border-color: rgba(197, 197, 197, 0.6);
-    padding: 10px;
-}
-.listen {
-    /*padding: 10px;
-    margin: 10px; */
-    /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    /*border-style: dashed;
-    border-width: 1px;
-    border-color: rgb(197, 197, 197);
-}*/
-
 .news-container1 {
     height: 30vh;
     color: #fff;
@@ -371,15 +334,14 @@ This allows us to switch position of the rows for mobile
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #listen .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0,0,0,0.6)), url(../img/IDYLL_Release_Show.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/BnW_Banner_No_Text.png);
     background-size: contain;
 
     /* Fills the remaining space with a dark color */
     background-color: #000; 
 
     /* Set the container to take up the full screen width and height */
-    height: 100vh;
-    width: 100vw;
+
     margin: 0;
     padding: 0;
     overflow: hidden; /* Prevent any overflow */

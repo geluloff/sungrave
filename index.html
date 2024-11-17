@@ -71,7 +71,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hidden" id="nav-listen">
                         <a class="nav-link" href="#listen">Listen</a>
                     </li>
                     <li class="nav-item">
@@ -129,25 +129,6 @@
         </div>
     </nav>
 
-
-    <!-- listen
-    <section id="listen">
-        <div class="image-cover">
-            <div class="listen-container" style="padding-bottom: 0px">
-                <div class="container">
-                    <div class="row" style="padding-top:12px;border-left-style:solid;border-left-color:rgba(197, 197, 197, 0.6);">
-                    </div>
-                </div>
-                <a class="anchor" id="news-anchor"></a>
-                <div class="container">
-                        <div class="row">
-                            <div class="col" style="border-left-style:solid;border-left-color:rgba(197, 197, 197, 0.6);height:40px!important;"> </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- About -->
     <section id="about">
         <div class="image-cover" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
@@ -170,9 +151,38 @@
             </div>
         </div>
     </section>
-    
-    <!-- news -->
 
+    <!-- Listen -->
+    <section id="listen" class="hidden">
+        <div class="image-cover" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+            <div class="container" style="padding: 30px;">
+                <div class="row align-items-center">
+                    <!-- Eventual Youtube video
+                    <div class="col-xs-10 offset-xs-1 col-md embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" style="border-width:3px;border-style:solid;border-color:rgb(65, 48, 17);" src="https://www.youtube.com/@sungrave-denver" allowfullscreen=""></iframe>
+                    </div>  -->
+                    <div class="col mt-3" style="color:rgb(255, 255, 255);">
+                        <span style="font-weight:bold"><p>Listen to Idyll</p></span>
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1899990523%3Fsecret_token%3Ds-4lxckbnaRYZ&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sungrave-93069920" title="SUNGRAVE" target="_blank" style="color: #cccccc; text-decoration: none;">SUNGRAVE</a> · <a href="https://soundcloud.com/sungrave-93069920/sets/idyll/s-4lxckbnaRYZ" title="Idyll" target="_blank" style="color: #cccccc; text-decoration: none;">Idyll</a></div>
+                        <!--<div class="container">
+                            <div class="row">
+                                <div class="col-10 offset-0">
+                                    <a target="_blank" href="https://soundcloud.com/sungrave-93069920/sets/idyll/s-4lxckbnaRYZ?si=fd375987d4f4412ca96e51c39b560fb0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"> Get an exclusive pre-release listen here. </a></p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <span style="text-decoration:underline"><p>Key moments to listen to:</p></span>
+                        <p>II. Oubliette - 3:45 - An intensely dynamic section moving from blast beats to a string-forward interlude.</p>
+                        <p>III. Mariana - 7:00 - A long ambient build-up turns into a crushing outro, flowing gaplessly into the dream state that is Black Tide.</p>
+                        <p>IV. Black Tide - 8:15 - Heavy fuzz, heavy vocals.</p>
+                        <p>VI. Contorta - 1:25 - A dense mix of guitars, strings and synth supports the most vocal-forward song of the album.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
     <section id="news">
         <article id="news4">
             <div class="news-container image-cover">
