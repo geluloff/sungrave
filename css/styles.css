@@ -272,6 +272,7 @@ This allows us to switch position of the rows for mobile
 .navbar-brand img.logo {
     width: 100%; /* Ensure the logo scales */
     max-width: calc(100vw - 150px); /* Subtract space for dropdowns or other items */
+    max-height: 60px;
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures proper scaling */
 }
