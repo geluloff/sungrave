@@ -73,38 +73,22 @@ const sungrave = (function() {
         }
     };
 })();
-document.addEventListener('DOMContentLoaded', sungrave.setUp);
+//document.addEventListener('DOMContentLoaded', sungrave.setUp);
 
 document.addEventListener("DOMContentLoaded", () => {
-    const hash = window.location.hash;
+    const hash = window.location.hash; // Store the hash for reuse
 
-    // Define sections to show based on hash
-    const sections = {
-        "#sneakpeek": "listen" //,
-        //"#preview": "about",
+    // Define objects to show based on hash
+    const dependencies = {
+        "#sneakpeek": {menuId: 'nav-listen', sectionId: 'listen'} //,
     };
 
-    const navItems = {
-        "#sneakpeek": "nav-listen",
-    };
-
-    // Hide all sections first
-    Object.values(sections).forEach(sectionId => {
-        document.getElementById(sectionId)?.classList.add("hidden");
-    });
-
-    // Hide all navbar items
-    Object.values(navItems).forEach(navId => {
-        document.getElementById(navId)?.classList.add("hidden");
-    });
-
-    // Show the relevant section if hash matches
-    if (sections[hash]) {
-        document.getElementById(sections[hash])?.classList.remove("hidden");
+    // Show the relevant objects if hash matches
+    if (dependencies[hash]) {
+        document.getElementById(dependencies[hash].menuId)?.classList.remove("hidden");
+        document.getElementById(dependencies[hash].sectionId)?.classList.remove("hidden");
     }
 
-    // Show the relevant navbar item if hash matches
-    if (navItems[hash]) {
-        document.getElementById(navItems[hash])?.classList.remove("hidden");
-    }
+    // Call sungrave.setUp after handling hash navigation
+    sungrave.setUp();
 });
