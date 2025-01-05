@@ -293,6 +293,11 @@ This allows us to switch position of the rows for mobile
     color: rgba(255, 255, 255 , 0.8);
 }
 
+.dropdown-stageplot {
+    background-color: rgba(0,0,0,.75);
+    color: rgba(255, 255, 255 , 0.8);
+}
+
 .dropdown-item {
     color: rgba(255, 255, 255, .8);
 }
@@ -335,6 +340,21 @@ This allows us to switch position of the rows for mobile
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #listen .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/BnW_Banner_No_Text.png);
+    background-size: contain;
+
+    /* Fills the remaining space with a dark color */
+    background-color: #000; 
+
+    /* Set the container to take up the full screen width and height */
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any overflow */
+}
+
+/*#about .image-cover-repeat, #footer .image-cover-repeat*/
+#stageplot .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/BnW_Banner_No_Text.png);
     background-size: contain;
 
@@ -489,6 +509,17 @@ This allows us to switch position of the rows for mobile
 }
 
 #listen a:hover {
+    color: rgba(197, 197, 197, 0.4);
+    text-decoration: underline;
+}
+
+/* Stageplot links */
+#stageplot a {
+    color: rgb(197, 197, 197);
+    text-decoration: underline;
+}
+
+#stageplot a:hover {
     color: rgba(197, 197, 197, 0.4);
     text-decoration: underline;
 }
