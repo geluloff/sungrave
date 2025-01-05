@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define objects to show based on hash
     const dependencies = {
         "#sneakpeek": {menuId: 'nav-listen', sectionId: 'listen'},
-        "#showprep": {menuId: 'nav-stageplot', sectionId: 'stageplot'}
+        "#showprep": {menuId: 'nav-downloads', sectionId: 'downloads'}
     };
 
     // Show the relevant objects if hash matches

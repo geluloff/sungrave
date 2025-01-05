@@ -90,20 +90,20 @@ a > .social-link {
     height: 25vh;
 }
 .landing > .landing-img.landing-grant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 }
 .landing > .landing-img.landing-joe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Joe.jpg);
     background-position-y: 45%;
     background-size: 120%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nate {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Nate.jpg);
     background-position-y: 20%;
 }
 .landing > .landing-img.landing-nick {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Nick.jpg);
     background-position-y: 23%;
     background-position-x: 0%;
 }
@@ -293,7 +293,7 @@ This allows us to switch position of the rows for mobile
     color: rgba(255, 255, 255 , 0.8);
 }
 
-.dropdown-stageplot {
+.dropdown-downloads {
     background-color: rgba(0,0,0,.75);
     color: rgba(255, 255, 255 , 0.8);
 }
@@ -320,10 +320,10 @@ This allows us to switch position of the rows for mobile
 
 #home.image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-    url(../img/SG_HQ_Denver_webonly_Singles-Nate.jpg),
-    url(../img/SG_HQ_Denver_webonly_Singles-Nick.jpg),
-    url(../img/SG_HQ_Denver_webonly_Singles-Joe.jpg),
-    url(../img/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    url(../img/small/SG_HQ_Denver_webonly_Singles-Nate.jpg),
+    url(../img/small/SG_HQ_Denver_webonly_Singles-Nick.jpg),
+    url(../img/small/SG_HQ_Denver_webonly_Singles-Joe.jpg),
+    url(../img/small/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 
     /* Control the placement of the images */
     background-position: 0vw 0vh, 25vw 0vh, 50vw 0vh, 75vw, 0vh;
@@ -340,7 +340,7 @@ This allows us to switch position of the rows for mobile
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #listen .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/BnW_Banner_No_Text.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/small/BnW_Banner_No_Text.png);
     background-size: contain;
 
     /* Fills the remaining space with a dark color */
@@ -354,9 +354,9 @@ This allows us to switch position of the rows for mobile
 }
 
 /*#about .image-cover-repeat, #footer .image-cover-repeat*/
-#stageplot .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/BnW_Banner_No_Text.png);
-    background-size: contain;
+#downloads .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0,0,0,0.95)), url(../img/BnW_Banner_No_Text.png);
+    /*background-size: contain;*/
 
     /* Fills the remaining space with a dark color */
     background-color: #000; 
@@ -369,12 +369,12 @@ This allows us to switch position of the rows for mobile
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #about .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #news1 .image-cover {
@@ -513,13 +513,13 @@ This allows us to switch position of the rows for mobile
     text-decoration: underline;
 }
 
-/* Stageplot links */
-#stageplot a {
+/* downloads links */
+#downloads a {
     color: rgb(197, 197, 197);
     text-decoration: underline;
 }
 
-#stageplot a:hover {
+#downloads a:hover {
     color: rgba(197, 197, 197, 0.4);
     text-decoration: underline;
 }
