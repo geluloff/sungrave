@@ -377,6 +377,11 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
+#about-copy .image-cover {
+    background-position: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
+}
+
 #news1 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/WPRD-logo.jpg);
     background-color: #000;
