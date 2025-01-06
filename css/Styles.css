@@ -374,7 +374,7 @@ This allows us to switch position of the rows for mobile
 
 #about .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
 }
 
 #about-copy .image-cover {
