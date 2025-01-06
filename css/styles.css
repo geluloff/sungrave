@@ -387,6 +387,23 @@ This allows us to switch position of the rows for mobile
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/WPRD-logo.jpg);
 }
 
+/* glow animation for News1 */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #bcbcbc, 0 0 10px #bcbcbc;
+    }
+    50% {
+        text-shadow: 0 0 15px #3b858f, 0 0 20px #3b858f;
+    }
+    100% {
+        text-shadow: 0 0 5px #bcbcbc, 0 0 10px #bcbcbc;
+    }
+}
+
+.glow {
+    animation: glow 2s infinite;
+}
+
 #news2 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/westword-logo.svg);
     background-color: #000;
