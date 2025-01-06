@@ -80,14 +80,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Define objects to show based on hash
     const dependencies = {
-        "#sneakpeek": {menuId: 'nav-listen', sectionId: 'listen'},
-        "#EPK": {menuId: 'nav-downloads', sectionId: 'downloads'}
+        "#sneakpeek": {menuIds: ['nav-listen', 'nav-about'], sectionIds: ['listen', 'about']},
+        "#EPK": {menuIds: ['nav-downloads', 'nav-about'], sectionIds: ['downloads', 'about']}
     };
 
     // Show the relevant objects if hash matches
-    if (dependencies[hash]) {
-        document.getElementById(dependencies[hash].menuId)?.classList.remove("hidden");
-        document.getElementById(dependencies[hash].sectionId)?.classList.remove("hidden");
+    const dependency = dependencies[hash];
+    if (dependency) {
+        // Unhide the menu items
+        dependency.menuIds.forEach(menuId => {
+            document.getElementById(menuId)?.classList.remove("hidden");
+        });
+
+        // Unhide the sections
+        dependency.sectionIds.forEach(sectionId => {
+            document.getElementById(sectionId)?.classList.remove("hidden");
+        });
     }
 
     // Call sungrave.setUp after handling hash navigation

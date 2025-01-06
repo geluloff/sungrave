@@ -378,15 +378,18 @@ This allows us to switch position of the rows for mobile
 }
 
 #news1 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/Faeton.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/WPRD-logo.jpg);
+    background-color: #000;
+    background-size: contain;
 }
 
 #news1 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Faeton.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/WPRD-logo.jpg);
 }
 
 #news2 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/metalperver.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/westword-logo.svg);
+    background-color: #000;
 }
 
 #news2 .image-cover.active {
