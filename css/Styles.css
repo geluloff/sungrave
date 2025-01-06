@@ -369,12 +369,12 @@ This allows us to switch position of the rows for mobile
 }
 
 #footer .image-cover-repeat {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/Idyll-Cover-BR.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../img/Idyll-Cover-BR.jpg);
 }
 
 #about .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Idyll-Cover-TL.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Idyll-Cover-TL.jpg);
 }
 
 #about-copy .image-cover {
