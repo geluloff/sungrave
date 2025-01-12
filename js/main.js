@@ -81,11 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define objects to show based on hash
     const dependencies = {
         "#sneakpeek": {menuIds: ['nav-listen', 'nav-about-copy'], sectionIds: ['listen', 'about-copy']},
-        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy'], sectionIds: ['downloads', 'about-copy']}
+        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy', 'nav-shows'], sectionIds: ['downloads', 'about-copy', 'shows']}
     };
 
     // Default case when no hash is present
-    const defaultDependency = {menuIds: ['nav-about'], sectionIds: ['about']};
+    const defaultDependency = {menuIds: ['nav-about', 'nav-merch'], sectionIds: ['about']};
 
     // Determine the appropriate dependency
     const dependency = dependencies[hash] || defaultDependency;

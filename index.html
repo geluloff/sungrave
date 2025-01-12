@@ -66,17 +66,20 @@
             </button>
             <div class="collapse navbar-collapse d-md-flex flex-column" id="navbarToggle">
                 <ul class="navbar-nav mx-auto mb-2 mb-md-0 d-flex flex-column flex-md-row text-center local-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
                     <li class="nav-item hidden" id="nav-about">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item hidden" id="nav-about-copy">
                         <a class="nav-link" href="#about-copy">About</a>
                     </li>
+                    <li class="nav-item hidden" id="nav-merch">
+                        <a class="nav-link" href="https://sungrave-denver.bandcamp.com/merch">Merch</a>
+                    </li>
                     <li class="nav-item hidden" id="nav-listen">
                         <a class="nav-link" href="#listen">Listen</a>
+                    </li>
+                    <li class="nav-item hidden" id="nav-shows">
+                        <a class="nav-link" href="#show">Shows</a>
                     </li>
                     <li class="nav-item hidden" id="nav-downloads">
                         <a class="nav-link" href="#downloads">Downloads</a>
@@ -138,15 +141,15 @@
 
     <!-- about-->
     <section id="about" class="hidden">
-        <div class="image-cover" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+        <div class="image-cover" style="border-top-width: 5px; border-top-style: solid; border-top-color: rgba(65, 48, 17, .6); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
             <div class="container" style="padding: 30px;">
                 <div class="row align-items-center">
-                    <div class="col mt-3" style="color:rgb(255, 255, 255);">
-                        <span style="font-weight:bold"><p>Debut album, Idyll, now streaming on all platforms!</p></span>
-                        <span style="font-weight:bold"><p>Check it out on WherePostRockDwells!</p></span>
+                    <div class="col mt-3" style="color:rgb(255, 255, 255, 0.8);">
+                        <span><p>Debut album, Idyll, now streaming on all platforms!</p></span>
+                        <span><p>Check it out on WherePostRockDwells!</p></span>
                     </div>
                     <!-- WPRD music video -->
-                    <div class="col-xs-10 offset-xs-1 col-md ratio ratio-16x9">
+                <div class="col-xs-10 offset-xs-1 col-md ratio ratio-16x9" style="padding: 10px; border: 2px solid rgba(255, 255, 255, 0.6);">
                         <!--  width="560" height="315" -->
                         <iframe src="https://www.youtube.com/embed/dhe4QRU9aQk?si=t7IffUlz7FWwh13Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -157,7 +160,7 @@
 
     <!-- about-copy -->
     <section id="about-copy" class="hidden">
-        <div class="image-cover" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+        <div class="image-cover" style="border-top-width: 5px; border-top-style: solid; border-top-color: rgba(65, 48, 17, .6); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
             <div class="container" style="padding: 30px;">
                 <div class="row align-items-center">
                     <!-- Eventual Youtube video
@@ -214,9 +217,27 @@
         </div>
     </section>
 
+    <!-- shows-->
+    <section id="shows" class="hidden">
+        <div class="image-cover" style="border-top-width: 5px; border-top-style: solid; border-top-color: rgba(65, 48, 17, .6); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+            <div class="container" style="padding: 30px;">
+                <div class="row align-items-center">
+                    <div class="col mt-3" style="color:rgb(255, 255, 255, 0.8);">
+                        <span style="text-decoration:underline"><p>Past Shows:</p></span>
+                        <p  style="margin: 0;">2024-07-11 - Denver - HQ - Attending:  60</p>
+                        <p  style="margin-top: 0; margin-bottom: 30px;">2024-12-20 - Denver - Bar 404 - Attending:  60</p>
+                        <span style="text-decoration:underline"><p>Future Shows:</p></span>
+                        <p  style="margin: 0;">2025-03-22 - Denver - HQ</p>
+                        <p  style="margin: 0;">2025-05-09 - Fort Collins - The Atrium</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
    <!-- Downloads -->
    <section id="downloads" class="hidden">
-        <div class="image-cover" style="border-bottom-width: 8px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
+        <div class="image-cover" style="border-top-width: 5px; border-top-style: solid; border-top-color: rgba(65, 48, 17, .6); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
             <div class="container" style="padding: 20px;">
                 <div class="col">
                     <span style="font-weight:bold"><p>Downloads</p></span>
@@ -314,12 +335,12 @@
     
     <!-- FOOTER -->
     <section id="footer">
-        <footer class="container-fluid image-cover-repeat text-white small pb-4" style="box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.6) inset;">
+        <footer class="container-fluid image-cover-repeat text-white small pb-4" style="box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.6) inset; border-top-width: 5px; border-top-style: solid; border-top-color: rgba(255, 255, 255, .1);">
             <div class="row align-items-center justify-content-center text-center pt-3">
                 <div id="contact" class="col order-sm-1">
-                    <div class="pb-1">Nate Girard | Joe Elmore | Nick Brazzel | Grant Luloff</div>
-                    <div class="pb-1">sungravedenver@gmail.com</div>
-                    <div class="pb-1">Booking: 4130Management@gmail.com</div>
+                    <div class="pb-1" style="color: rgba(255, 255, 255, 0.7);">Nate Girard | Joe Elmore | Nick Brazzel | Grant Luloff</div>
+                    <div class="pb-1" style="color: rgba(255, 255, 255, 0.7);">sungravedenver@gmail.com</div>
+                    <div class="pb-1" style="color: rgba(255, 255, 255, 0.7);">Booking: 4130Management@gmail.com</div>
                 </div>
             </div>
             <div class="d-flex justify-content-center pt-3 pb-1 text-secondary social">

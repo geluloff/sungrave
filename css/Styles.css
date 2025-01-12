@@ -272,7 +272,7 @@ This allows us to switch position of the rows for mobile
 .navbar-brand img.logo {
     width: 100%; /* Ensure the logo scales */
     max-width: calc(100vw - 150px); /* Subtract space for dropdowns or other items */
-    max-height: 60px;
+    max-height: 55px;
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures proper scaling */
 }
@@ -338,7 +338,6 @@ This allows us to switch position of the rows for mobile
     overflow: hidden; /* Prevent any overflow */
 }
 
-/*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #listen .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0,0,0,0.9)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
     background-size: contain;
@@ -353,7 +352,6 @@ This allows us to switch position of the rows for mobile
     overflow: hidden; /* Prevent any overflow */
 }
 
-/*#about .image-cover-repeat, #footer .image-cover-repeat*/
 #downloads .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0,0,0,0.95)), url(../img/BnW_Banner_No_Text.png);
     /*background-size: contain;*/
@@ -380,6 +378,11 @@ This allows us to switch position of the rows for mobile
 #about-copy .image-cover {
     background-position: cover;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
+}
+
+#shows .image-cover {
+    background-position: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/small/2024-12-20-Show-Grant.jpg);
 }
 
 #news1 .image-cover {
