@@ -93,9 +93,8 @@ a > .social-link {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Grant.jpg);
 }
 .landing > .landing-img.landing-joe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Joe.jpg);
-    background-position-y: 45%;
-    background-size: 120%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/HQ-Joe.jpg);
+    background-position-y: 30%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nate {
@@ -112,11 +111,6 @@ a > .social-link {
     .landing > .landing-img {
         width: 25vw;
         height: auto;
-    }
-    .landing > .landing-img.landing-joe {
-        background-position-y: 80%;
-        background-position-x: 50%;
-        background-size: 200%;
     }
 }
 @media (min-width: 768px) {
