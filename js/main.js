@@ -80,12 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Define objects to show based on hash
     const dependencies = {
-        "#sneakpeek": {menuIds: ['nav-listen', 'nav-about-copy'], sectionIds: ['listen', 'about-copy']},
-        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy', 'nav-shows'], sectionIds: ['downloads', 'about-copy', 'shows']}
+        "#sneakpeek": {menuIds: ['nav-listen', 'nav-about-copy'], sectionIds: ['listen', 'about-copy'], optionalIds: ['past-shows']},
+        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy', 'nav-shows'], sectionIds: ['downloads', 'about-copy', 'shows'], optionalIds: ['past-shows']}
     };
 
     // Default case when no hash is present
-    const defaultDependency = {menuIds: ['nav-about', 'nav-merch'], sectionIds: ['about']};
+    const defaultDependency = {menuIds: ['nav-about', 'nav-merch', 'nav-shows'], sectionIds: ['about', 'shows']};
 
     // Determine the appropriate dependency
     const dependency = dependencies[hash] || defaultDependency;
@@ -99,6 +99,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Unhide the sections
         dependency.sectionIds.forEach(sectionId => {
             document.getElementById(sectionId)?.classList.remove("hidden");
+        });
+    
+        // Unhide optional sections
+        dependency.optionalIds?.forEach(optionalId => {
+            document.getElementById(optionalId)?.classList.remove("hidden");
         });
     }
 
