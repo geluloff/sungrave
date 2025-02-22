@@ -3,8 +3,9 @@
 }
 
 .navbar-dark {
-    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28254, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28254, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -50,7 +51,7 @@ body {
     position: fixed;
     height: auto;
     z-index: 1;
-    background-image: url('../img/Idyll-Cover-TR.jpg'); /* Replace with your image path */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('../img/Idyll-Cover-TR.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire navbar */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating */
