@@ -12,7 +12,7 @@ body {
     width: 100%;
     position: relative;
     color: rgb(255, 255, 255);
-    font-family: 'Philosopher';
+    font-family: 'Baskervville';
     /*font-size: 1.25rem;*/
     /* transition: background-color ease-out 0.33s; */
 }
@@ -150,7 +150,7 @@ a > .social-link {
 
 
 .head-text {
-    font-family: 'Philosopher';
+    font-family: 'Baskervville';
     /* font-weight: bold; */
 }
 
@@ -188,7 +188,7 @@ This allows us to switch position of the rows for mobile
     max-width: 15rem; 
     width: 90vw;
     grid-area: logo;
-    font-family: 'Philosopher';
+    font-family: 'Baskervville';
     color: #fff;
 }
 .home-container nav {
@@ -253,7 +253,7 @@ This allows us to switch position of the rows for mobile
 } */
 
  .navbar-brand {
-    font-family: 'Philosopher';
+    font-family: 'Baskervville';
     font-weight:  400;
     letter-spacing: 0.35rem;
 }
