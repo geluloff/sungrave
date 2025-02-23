@@ -268,7 +268,7 @@
     </section>
 
 <!-- shows-->
-<section id="shows" style="font-size: 14px;" class="hidden">
+<section id="shows" style="font-size: 14px;">
     <div class="image-cover" style="border-top-width: 5px; border-top-style: solid; border-top-color: rgba(65, 48, 17, .6); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgba(65, 48, 17, .6);">
         <div style="text-align: center; margin-bottom: 20px;">
             <button id="show-upcoming-btn" class="show-toggle-btn active">Upcoming Shows</button>
@@ -312,14 +312,14 @@
             </table>
         </div>
         
-        <div id="past-shows" class="hidden">
+        <div id="past-shows">
             <table class="shows-table">
                 <thead>
                     <tr style="border-bottom: 2px solid;">
                         <th style="text-align: left; padding: 5px;">Date</th>
                         <th style="text-align: left; padding: 5px;">Location</th>
                         <th style="text-align: left; padding: 5px;">With</th>
-                        <th style="text-align: left; padding: 5px;">Attending</th>
+                        <th id="attending-header" class="hidden" style="text-align: left; padding: 5px;">Attending</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -327,13 +327,13 @@
                         <td style="padding: 5px; font-weight: bold;">Jul 11, 2024</td>
                         <td style="padding: 5px;">HQ<br>Denver, CO</td>
                         <td style="padding: 5px;" class="with-column">Make it So and Cruel Mourning</td>
-                        <td style="padding: 5px;" class="attending-column">60</td>
+                        <td style="padding: 5px;" class="attending-column hidden">60</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #ccc;">
                         <td style="padding: 5px; font-weight: bold;">Dec 20, 2024</td>
-                        <td style="padding: 5px;">Bar404<br>Denver, CO</td>
+                        <td style="padding: 5px;">Bar 404<br>Denver, CO</td>
                         <td style="padding: 5px;" class="with-column">Rumble Young Man Rumble and Only Echoes</td>
-                        <td style="padding: 5px;" class="attending-column">60</td>
+                        <td style="padding: 5px;" class="attending-column hidden">60</td>
                     </tr>
                 </tbody>
             </table>

@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Define objects to show based on hash
     const dependencies = {
-        "#sneakpeek": {menuIds: ['nav-listen', 'nav-about-copy'], sectionIds: ['listen', 'about-copy'], optionalIds: ['past-shows']},
-        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy', 'nav-shows'], sectionIds: ['downloads', 'about-copy', 'shows'], optionalIds: ['past-shows']}
+        "#sneakpeek": {menuIds: ['nav-listen', 'nav-about-copy'], sectionIds: ['listen', 'about-copy']}, //, optionalIds: ['past-shows']
+        "#EPK": {menuIds: ['nav-downloads', 'nav-about-copy', 'nav-shows'], sectionIds: ['downloads', 'about-copy', 'shows'], tableElements: ['attending-header', 'attending-column']} //, optionalIds: ['past-shows']
     };
 
     // Default case when no hash is present
@@ -104,6 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Unhide optional sections
         dependency.optionalIds?.forEach(optionalId => {
             document.getElementById(optionalId)?.classList.remove("hidden");
+        });
+
+        // Unhide attending column elements if applicable
+        dependency.tableElements?.forEach(tableElement => {
+            document.querySelectorAll(`.${tableElement}, #${tableElement}`).forEach(el => el.classList.remove("hidden"));
         });
     }
 

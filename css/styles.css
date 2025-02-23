@@ -1,5 +1,6 @@
 .hidden {
-    display: none; /* Hides the section completely */
+    display: none !important;
+    visibility: hidden;
 }
 
 .navbar-dark {
