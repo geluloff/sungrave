@@ -110,3 +110,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // Call sungrave.setUp after handling hash navigation
     sungrave.setUp();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const upcomingShows = document.getElementById("upcoming-shows");
+    const pastShows = document.getElementById("past-shows");
+    const upcomingBtn = document.getElementById("show-upcoming-btn");
+    const pastBtn = document.getElementById("show-past-btn");
+
+    // Ensure past shows are hidden initially
+    pastShows.style.display = "none";
+
+    upcomingBtn.addEventListener("click", function () {
+        upcomingShows.style.display = "block";
+        pastShows.style.display = "none";
+        upcomingBtn.classList.add("active");
+        pastBtn.classList.remove("active");
+    });
+
+    pastBtn.addEventListener("click", function () {
+        upcomingShows.style.display = "none";
+        pastShows.style.display = "block";
+        pastBtn.classList.add("active");
+        upcomingBtn.classList.remove("active");
+    });
+});

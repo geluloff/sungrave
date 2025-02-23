@@ -142,23 +142,10 @@ a > .social-link {
     transform: scale(1.02);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .head-text {
     font-family: 'Baskervville';
     /* font-weight: bold; */
 }
-
 
 /* 
 The darken-overlay class will be applied to the body in JS.  
@@ -382,6 +369,8 @@ This allows us to switch position of the rows for mobile
 #shows .image-cover {
     background-position: cover;
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/small/2024-12-20-Show-Grant.jpg);
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 #news1 .image-cover {
@@ -604,35 +593,84 @@ span.nobr { white-space: nowrap; }
     color: #9d9da5!important
 }
 
-/*
-.four-vertical-images {
-    display: flex;
-    height: 100vh;      /* Full viewport height 
-    width: 100vw;       /* Full viewport width 
-    margin: 0;          /* Remove any extra margins 
-    padding: 0;         /* Remove any padding 
-    overflow: hidden;  /* Prevent any overflow within the flexbox 
+.shows-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
 }
 
-.four-vertical-images img {
-    width: 25vw;    /* Force each image to take up 25% of the viewport width 
-    height: 100vh;  /* Make each image take the full height of the viewport 
-    object-fit: cover;  /* Ensure images cover their containers without distortion 
-    box-sizing: border-box;  /* Ensure padding and border don't affect width 
+.shows-table table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
+.shows-table th, .shows-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
 
-.carousel-inner .carousel-item {
-    display: flex;
-    align-items: center;
+/* Responsive Flexbox Table */
+@media (max-width: 575.98px) {
+    .shows-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shows-table table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .shows-table th,
+    .shows-table td {
+        display: block;
+        text-align: center; /* Center align text */
+        border-bottom: none; /* Remove row lines */
+        padding: 8px;
+    }
+
+    .shows-table thead {
+        display: none; /* Hide table header on small screens */
+    }
+
+    .shows-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border: 2px solid #ccc; /* Add a box around each entry */
+        padding: 10px;
+        width: 100%;
+    }
+
+    .with-column::before {
+        content: "With";
+        display: block;
+    }
+
+    .attending-column::before {
+        content: "Attending";
+        display: block;
+    }
 }
-  
-.carousel-inner .carousel-item .col-6 {
-    padding: 0;
+
+.show-toggle-btn {
+    background-color: #333;;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-  
-.carousel-inner .carousel-item img {
-    width: 25vw;    /* Force each image to take up 25% of the viewport width 
-    height: 100vh;  /* Make each image take the full height of the viewport 
+
+.show-toggle-btn.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
 }
-*/ 
+
