@@ -112,6 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Check if the current page is listen.html
+    if (window.location.pathname.includes("listen.html")) {
+        const navbar = document.getElementById("sungrave-nav-container");
+        if (navbar) {
+            navbar.parentElement.classList.add("is-pinned");
+        }
+    }
+
     // Call sungrave.setUp after handling hash navigation
     sungrave.setUp();
 });
