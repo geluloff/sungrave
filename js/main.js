@@ -147,3 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
         upcomingBtn.classList.remove("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const logo = document.querySelector(".sungrave-logo");
+
+    if (logo) {
+        logo.addEventListener("mouseover", () => {
+            logo.style.animation = "shimmer 1s infinite linear";
+        });
+
+        logo.addEventListener("mouseout", () => {
+            logo.style.animation = "shimmer 2.5s infinite linear";
+        });
+    }
+});
