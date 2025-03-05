@@ -368,8 +368,8 @@ This allows us to switch position of the rows for mobile
 }
 
 #listen-page .image-cover {
-    background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-size: contain;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg) no-repeat center center fixed;
 
     /* Set the container to take up the full screen width and height */
     min-height: 100vh;
@@ -700,4 +700,22 @@ span.nobr { white-space: nowrap; }
     width: 400px;
     max-width: 80%;
     padding-top: 30px;
+}
+
+/* Ensure consistent padding above and below the social links */
+#listen-page .social-links {
+    padding: 1rem 0; /* Adjust the padding to match iframe spacing */
+}
+
+/* Adjust spacing for individual social icons */
+#listen-page .social-link {
+    width: 40px; /* Set a consistent size */
+    height: 40px;
+    padding-bottom: 0.5rem; /* Adjust icon padding */
+}
+
+#listen-page .social-links-wrapper {
+    height: 175px; /* Match iframe height */
+    display: flex;
+    align-items: center; /* Vertically center */
 }
