@@ -368,9 +368,9 @@ This allows us to switch position of the rows for mobile
 }
 
 #listen-page .image-cover {
-    background-size: contain;
+    
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg) no-repeat center center fixed;
-
+    background-size: cover;
     /* Set the container to take up the full screen width and height */
     min-height: 100vh;
     width: 100vw;
