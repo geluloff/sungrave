@@ -389,7 +389,7 @@ This allows us to switch position of the rows for mobile
 #news1 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.9), rgba(0,0,0,0.75)), url(../img/BH-Stacked-Logo-White.png);
     background-color: #000;
-    background-size: contain;
+
 }
 
 #news1 .image-cover.active {
