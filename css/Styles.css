@@ -359,12 +359,12 @@ This allows us to switch position of the rows for mobile
 
 #about .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Idyll-Cover-TL.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url(../img/small/SUNGRAVE_2025-03-22_Live.jpg);
 }
 
 #about-copy .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/small/sungrave_ALBUM_FINAL_no-text.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(../img/small/SUNGRAVE_2025-03-22_Live.jpg);
 }
 
 #listen-page .image-cover {
