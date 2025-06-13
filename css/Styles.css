@@ -719,3 +719,11 @@ span.nobr { white-space: nowrap; }
     display: flex;
     align-items: center; /* Vertically center */
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); /* brighter background */
+    background-size: 100% 100%;
+    border-radius: 50%; /* optional: nice circle background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* optional: glow effect */
+}
