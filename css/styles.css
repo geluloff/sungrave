@@ -727,3 +727,29 @@ span.nobr { white-space: nowrap; }
     border-radius: 50%; /* optional: nice circle background */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* optional: glow effect */
 }
+
+#aboutCarousel .carousel-inner {
+    min-height: 40vh;
+}
+
+.responsive-text {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 576px) {
+    .responsive-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .responsive-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-text {
+        font-size: 1.5rem;
+    }
+}

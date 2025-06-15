@@ -148,3 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const aboutCarousel = document.getElementById('aboutCarousel');
+aboutCarousel.addEventListener('slide.bs.carousel', () => {
+    const carouselInstance = bootstrap.Carousel.getInstance(aboutCarousel);
+    carouselInstance.pause();
+});
