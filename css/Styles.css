@@ -96,20 +96,23 @@ a > .social-link {
     height: 25vh;
 }
 .landing > .landing-img.landing-grant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Grant.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/GRAVESUN_promo-Grant.jpg);
+    background-position-y: 25%;
+    background-position-x: 50%;
 }
 .landing > .landing-img.landing-joe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/HQ-Joe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/GRAVESUN_promo-Joe.jpg);
     background-position-y: 30%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nate {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Nate.jpg);
-    background-position-y: 20%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/GRAVESUN_promo-Nate.jpg);
+    background-position-y: 35%;
+    background-position-x: 30%;
 }
 .landing > .landing-img.landing-nick {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/SG_HQ_Denver_webonly_Singles-Nick.jpg);
-    background-position-y: 23%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/small/GRAVESUN_promo-Nick.jpg);
+    background-position-y: 37%;
     background-position-x: 0%;
 }
 
