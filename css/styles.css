@@ -629,7 +629,7 @@ span.nobr { white-space: nowrap; }
 
 /* Responsive Flexbox Table */
 @media (max-width: 575.98px) {
-    .shows-table {
+    .upcoming-responsive .shows-table {
         display: flex;
         flex-direction: column;
         align-items: center;
