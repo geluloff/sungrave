@@ -627,50 +627,74 @@ span.nobr { white-space: nowrap; }
     text-align: left;
 }
 
-/* Responsive Flexbox Table */
+/* -----------------------------------------------------------
+   MOBILE CARD MODE — ONLY for upcoming-responsive
+   ----------------------------------------------------------- */
 @media (max-width: 575.98px) {
-    .upcoming-responsive .shows-table {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .shows-table table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    .shows-table th,
-    .shows-table td {
+    /* IMPORTANT: keep wrapper normal, only alter the <table> */
+    .upcoming-responsive .shows-table table {
         display: block;
-        text-align: center; /* Center align text */
-        border-bottom: none; /* Remove row lines */
-        padding: 8px;
     }
 
-    .shows-table thead {
-        display: none; /* Hide table header on small screens */
+    .upcoming-responsive .shows-table thead {
+        display: none;
     }
 
-    .shows-table tr {
+    /* Each TR becomes its own "card" */
+    .upcoming-responsive .shows-table tbody tr {
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;
-        border: 2px solid #ccc; /* Add a box around each entry */
+        border: 2px solid #ccc;
         padding: 10px;
         width: 100%;
+        box-sizing: border-box;
     }
 
-    .with-column::before {
+    /* Cells stack vertically inside cards */
+    .upcoming-responsive .shows-table td,
+    .upcoming-responsive .shows-table th {
+        display: block;
+        text-align: center;
+        border-bottom: none;
+        padding: 8px;
+    }
+
+    /* Per-row labels (appear only in card view) */
+    .upcoming-responsive .shows-table td.with-column::before {
         content: "With";
         display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
     }
 
-    .attending-column::before {
+    .upcoming-responsive .shows-table td.attending-column::before {
         content: "Attending";
         display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
     }
 }
+
+/* -----------------------------------------------------------
+   past-shows MUST stay in table mode always
+   Explicitly reset anything mobile rules might touch
+   ----------------------------------------------------------- */
+#past-shows .shows-table table {
+    display: table !important;
+}
+
+#past-shows .shows-table tbody tr {
+    display: table-row !important;
+}
+
+#past-shows .shows-table td,
+#past-shows .shows-table th {
+    display: table-cell !important;
+    text-align: left !important;
+}
+
 
 .show-toggle-btn {
     background-color: #333;;
