@@ -96,24 +96,24 @@ a > .social-link {
     height: 25vh;
 }
 .landing > .landing-img.landing-grant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Grant_amber_1.jpg);
-    background-position-y: 27%;
-    background-position-x: 30%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Web-BG-Amber-Grant.jpg);
+    background-position-y: 18%;
+    background-position-x: 85%;
 }
 .landing > .landing-img.landing-joe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Joe_amber_2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Web-BG-Amber-Joe.jpg);
     background-position-y: 25%;
     background-position-x: 65%;
 }
 .landing > .landing-img.landing-nate {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Nate_amber_4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.50)), url(../img/small/Web-BG-Amber-Nate.jpg);
     background-position-y: 22%;
     background-position-x: 50%;
 }
 .landing > .landing-img.landing-nick {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/small/Nick_amber_2.jpg);
-    background-position-y: 33%;
-    background-position-x: 95%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url(../img/small/Web-BG-Amber-Nick.jpg);
+    background-position-y: 28%;
+    background-position-x: 60%;
 }
 
 @media (min-width: 576px) {
