@@ -780,3 +780,10 @@ span.nobr { white-space: nowrap; }
         font-size: 1.5rem;
     }
 }
+
+.no-upcoming-shows {
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 12px;
+    text-align: center;
+}
