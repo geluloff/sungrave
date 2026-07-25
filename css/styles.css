@@ -390,16 +390,25 @@ This allows us to switch position of the rows for mobile
 }
 
 #news1 .image-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.9), rgba(0,0,0,0.75)), url(../img/Braeburn-White.png);
+    background-color: #000;
+}
+
+#news1 .image-cover.active {
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url(../img/Braeburn-White.png);
+}
+
+#news2 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.9), rgba(0,0,0,0.75)), url(../img/BH-Stacked-Logo-White.png);
     background-color: #000;
 
 }
 
-#news1 .image-cover.active {
+#news2 .image-cover.active {
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/BH-Stacked-Logo-White.png);
 }
 
-/* glow animation for News1 */
+/* glow animation for News2 */
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px #bcbcbc, 0 0 10px #bcbcbc;
@@ -416,22 +425,13 @@ This allows us to switch position of the rows for mobile
     animation: glow 2s infinite;
 }
 
-#news2 .image-cover {
+#news3 .image-cover {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8), rgba(0,0,0,0.6)), url(../img/westword-logo.svg);
     background-color: #000;
 }
 
-#news2 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/metalperver.jpg);
-}
-
-#news3 .image-cover {
-    background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.85), rgba(0,0,0,0.55)), url(../img/Destroy_Exist.png);
-}
-
 #news3 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Mariana.png);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/westword-logo.svg);
 }
 
 #news4 .image-cover {
@@ -443,19 +443,12 @@ This allows us to switch position of the rows for mobile
 }
 
 #news5 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/tasting-table-cover.jpg);
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.85), rgba(0,0,0,0.55)), url(../img/Destroy_Exist.png);
 }
 
 #news5 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/tasting-table-cover.jpg);
-}
-
-#news6 .image-cover {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(../img/umviajante-cover.jpg);
-}
-
-#news6 .image-cover.active {
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/umviajante-cover.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255 , 0.2)), url(../img/Mariana.png);
 }
 
 /* footer styles defined here */
