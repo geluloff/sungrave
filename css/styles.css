@@ -362,7 +362,7 @@ This allows us to switch position of the rows for mobile
 
 #about .image-cover {
     background-position: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .0), rgba(0, 0, 0, .0)), url(../img/pace-1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .0), rgba(0, 0, 0, .0)), url(../img/small/pace-1.png);
 }
 
 #about-copy .image-cover {
